@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Lengkap Phishing: Ancaman, Pencegahan & Perlindungan | 30 Desember 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #0a1a3a;
+            --primary-blue: #1a2980;
+            --secondary-blue: #26d0ce;
+            --accent-red: #ff6b6b;
+            --accent-yellow: #ffd166;
+            --accent-green: #06d6a0;
+            --light-bg: #f8fafc;
+            --medium-bg: #e2e8f0;
+            --dark-text: #1e293b;
+            --medium-text: #475569;
+            --light-text: #64748b;
+            --shadow-light: 0 10px 25px rgba(0, 0, 0, 0.05);
+            --shadow-medium: 0 15px 35px rgba(0, 0, 0, 0.1);
+            --shadow-heavy: 0 20px 50px rgba(0, 0, 0, 0.15);
+            --border-radius: 16px;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-text);
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--medium-bg) 100%);
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+        
+        .main-container {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-heavy);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, var(--secondary-blue) 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-bottom: 10px solid var(--accent-red);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23000000' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.1;
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 25px;
+            opacity: 0.95;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .date-badge {
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            font-weight: 500;
+        }
+        
+        /* Navigation */
+        .nav-container {
+            background-color: white;
+            border-bottom: 1px solid var(--medium-bg);
+            padding: 0 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .nav-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin: 0 5px;
+        }
+        
+        .nav-link {
+            display: block;
+            padding: 18px 22px;
+            color: var(--dark-text);
+            text-decoration: none;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            border-bottom: 3px solid transparent;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-blue);
+            border-bottom: 3px solid var(--secondary-blue);
+            background-color: rgba(38, 208, 206, 0.05);
+        }
+        
+        /* Warning Banner */
+        .warning-banner {
+            background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 25px 40px;
+            margin: 30px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            box-shadow: var(--shadow-medium);
+            border-left: 8px solid #ff4757;
+        }
+        
+        .warning-icon {
+            font-size: 2.5rem;
+            margin-right: 25px;
+            flex-shrink: 0;
+        }
+        
+        .warning-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        
+        /* Quote Section */
+        .quote-section {
+            text-align: center;
+            padding: 50px 40px;
+            margin: 30px;
+            background: linear-gradient(135deg, rgba(26, 41, 128, 0.05) 0%, rgba(38, 208, 206, 0.05) 100%);
+            border-radius: var(--border-radius);
+            border-left: 6px solid var(--secondary-blue);
+            border-right: 6px solid var(--primary-blue);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quote-icon {
+            position: absolute;
+            font-size: 8rem;
+            color: rgba(26, 41, 128, 0.03);
+            z-index: 1;
+        }
+        
+        .quote-icon.left {
+            left: 20px;
+            top: 20px;
+        }
+        
+        .quote-icon.right {
+            right: 20px;
+            bottom: 20px;
+        }
+        
+        .quote-text {
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            position: relative;
+            z-index: 2;
+            line-height: 1.4;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .quote-author {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+            margin-top: 20px;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Content Sections */
+        .content-container {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            background-color: white;
+            box-shadow: var(--shadow-light);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            transition: var(--transition);
+        }
+        
+        .section:hover {
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--secondary-blue);
+        }
+        
+        .section-icon {
+            font-size: 2.2rem;
+            color: var(--primary-blue);
+            margin-right: 20px;
+            width: 70px;
+            height: 70px;
+            background-color: rgba(38, 208, 206, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-blue);
+            font-size: 1.7rem;
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(38, 208, 206, 0.3);
+        }
+        
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+            font-size: 1.4rem;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 22px;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--medium-text);
+        }
+        
+        .highlight {
+            background-color: rgba(255, 215, 102, 0.2);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            color: #b45309;
+        }
+        
+        ul, ol {
+            margin: 20px 0 25px 40px;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: var(--medium-text);
+            position: relative;
+        }
+        
+        ul li:before {
+            content: "•";
+            color: var(--secondary-blue);
+            font-size: 1.8rem;
+            position: absolute;
+            left: -25px;
+            top: -5px;
+        }
+        
+        ol {
+            counter-reset: item;
+        }
+        
+        ol li {
+            counter-increment: item;
+        }
+        
+        ol li:before {
+            content: counter(item) ".";
+            color: var(--primary-blue);
+            font-weight: 700;
+            position: absolute;
+            left: -30px;
+        }
+        
+        /* Box Styles */
+        .info-box {
+            background-color: var(--light-bg);
+            border-left: 6px solid var(--secondary-blue);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .danger-box {
+            background-color: rgba(255, 107, 107, 0.08);
+            border-left: 6px solid var(--accent-red);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .success-box {
+            background-color: rgba(6, 214, 160, 0.08);
+            border-left: 6px solid var(--accent-green);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .example-container {
+            background-color: #f1f5f9;
+            border: 2px dashed #94a3b8;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .example-title {
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .example-title i {
+            margin-right: 10px;
+            color: var(--accent-red);
+        }
+        
+        .phishing-link-example {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid var(--accent-red);
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+            color: #dc2626;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .phishing-link-example:hover {
+            background-color: #fff5f5;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .legitimate-link {
+            border-left: 5px solid var(--accent-green);
+            color: #059669;
+        }
+        
+        .legitimate-link:hover {
+            background-color: #f0fdf4;
+        }
+        
+        /* Case Study */
+        .case-study {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 16px;
+            padding: 35px;
+            margin: 35px 0;
+            border-left: 10px solid var(--accent-red);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .case-study-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: var(--accent-red);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        
+        .case-study-title {
+            color: var(--accent-red);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .case-study-subtitle {
+            color: var(--primary-blue);
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .case-study-step {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-light);
+            border-left: 5px solid var(--secondary-blue);
+            position: relative;
+            counter-increment: step;
+        }
+        
+        .case-study-step:before {
+            content: counter(step);
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-medium);
+        }
+        
+        /* Types Grid */
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .type-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--shadow-light);
+            border-top: 6px solid var(--primary-blue);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .type-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .type-card:nth-child(2n) {
+            border-top-color: var(--secondary-blue);
+        }
+        
+        .type-card:nth-child(3n) {
+            border-top-color: var(--accent-red);
+        }
+        
+        .type-card:nth-child(4n) {
+            border-top-color: var(--accent-green);
+        }
+        
+        .type-card:nth-child(5n) {
+            border-top-color: var(--accent-yellow);
+        }
+        
+        .type-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-blue);
+        }
+        
+        .type-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        /* Prevention Grid */
+        .prevention-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 35px 0;
+        }
+        
+        .prevention-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--shadow-light);
+            border: 2px solid transparent;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .prevention-card:hover {
+            border-color: var(--secondary-blue);
+            transform: translateY(-5px);
+        }
+        
+        .prevention-number {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--secondary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .prevention-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            padding-right: 50px;
+            font-weight: 600;
+        }
+        
+        /* Statistics Section */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow-medium);
+            transition: var(--transition);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-heavy);
+        }
+        
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stat-text {
+            font-size: 1.2rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 35px 0;
+            box-shadow: var(--shadow-light);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 20px;
+            border-bottom: 1px solid var(--medium-bg);
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: var(--light-bg);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .phishing-indicator {
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+        
+        .legitimate-indicator {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.05;
+            z-index: 1;
+        }
+        
+        .footer-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .footer-quote {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary-blue);
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .footer-info {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .footer-copyright {
+            font-size: 1rem;
+            opacity: 0.7;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .types-grid, .prevention-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+        
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1.4rem;
+            }
+            
+            .quote-text {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.9rem;
+            }
+            
+            .content-container {
+                padding: 30px;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2.3rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .header, .content-container {
+                padding: 25px 20px;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-item {
+                width: 100%;
+                text-align: center;
+                margin: 2px 0;
+            }
+            
+            .nav-link {
+                padding: 15px;
+            }
+            
+            .types-grid, .prevention-grid, .stats-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .warning-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                margin: 20px;
+            }
+            
+            .warning-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .quote-text {
+                font-size: 1.6rem;
+            }
+            
+            .quote-icon {
+                font-size: 5rem;
+            }
+            
+            .footer-quote {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            h3 {
+                font-size: 1.4rem;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .section-icon {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+            
+            .date-badge {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+        }
+        
+        /* Animation for elements */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="header-overlay"></div>
+            <div class="header-content">
+                <h1 class="animate-fade-in-up">EDUKASI KOMPREHENSIF TENTANG ANCAMAN PHISHING</h1>
+                <div class="subtitle animate-fade-in-up delay-1">Panduan Lengkap untuk Memahami, Mengenali, Mencegah, dan Melindungi Diri dari Berbagai Bentuk Penipuan Siber yang Terus Berkembang</div>
+                <div class="date-badge animate-fade-in-up delay-2">Dibuat: 30 Desember 2025 | Revisi Terakhir: 30 Desember 2025</div>
+            </div>
+        </header>
+        
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#pengertian" class="nav-link active"><i class="fas fa-info-circle"></i> Pengertian</a></li>
+                <li class="nav-item"><a href="#mekanisme" class="nav-link"><i class="fas fa-cogs"></i> Mekanisme</a></li>
+                <li class="nav-item"><a href="#contoh" class="nav-link"><i class="fas fa-link"></i> Contoh</a></li>
+                <li class="nav-item"><a href="#studi-kasus" class="nav-link"><i class="fas fa-search"></i> Studi Kasus</a></li>
+                <li class="nav-item"><a href="#dampak" class="nav-link"><i class="fas fa-exclamation-triangle"></i> Dampak</a></li>
+                <li class="nav-item"><a href="#jenis" class="nav-link"><i class="fas fa-list"></i> Jenis-Jenis</a></li>
+                <li class="nav-item"><a href="#statistik" class="nav-link"><i class="fas fa-chart-bar"></i> Statistik</a></li>
+                <li class="nav-item"><a href="#pencegahan" class="nav-link"><i class="fas fa-shield-alt"></i> Pencegahan</a></li>
+                <li class="nav-item"><a href="#penanganan" class="nav-link"><i class="fas fa-ambulance"></i> Penanganan</a></li>
+            </ul>
+        </div>
+        
+        <div class="warning-banner animate-fade-in-up delay-2">
+            <div class="warning-icon">
+                <i class="fas fa-radiation-alt"></i>
+            </div>
+            <div class="warning-text">
+                ⚠️ PERINGATAN TINGGI: Phishing merupakan salah satu metode penipuan siber paling berbahaya, terus berevolusi, dan bertanggung jawab atas lebih dari 90% serangan siber yang berhasil. Edukasi dan kewaspadaan adalah pertahanan utama Anda melawan ancaman digital ini!
+            </div>
+        </div>
+        
+        <div class="quote-section animate-fade-in-up delay-3">
+            <div class="quote-icon left">
+                <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="quote-icon right">
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="quote-text">
+                "Keamananmu berasal dari kewaspadaanmu. Di dunia digital yang penuh dengan samaran dan tipu daya, pengetahuan adalah perisai terkuat yang dapat melindungi data, privasi, dan aset digital Anda dari ancaman yang tak terlihat."
+            </div>
+            <div class="quote-author">- Prinsip Keamanan Siber Fundamental</div>
+        </div>
+        
+        <div class="content-container">
+            <!-- Bagian 1: Pengertian Phishing -->
+            <section id="pengertian" class="section animate-fade-in-up delay-1">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h2>Apa Itu Phishing? Memahami Konsep Dasar Penipuan Digital</h2>
+                </div>
+                
+                <p>Phishing adalah bentuk <span class="highlight">penipuan siber yang terstruktur dan sistematis</span> di mana pelaku menyamar sebagai entitas atau organisasi yang tepercaya (seperti bank, perusahaan teknologi ternama, layanan pemerintah, atau platform digital populer) dengan tujuan utama mencuri informasi sensitif pengguna. Informasi yang menjadi target termasuk namun tidak terbatas pada: nama pengguna dan kata sandi, detail kartu kredit dan debit, nomor jaminan sosial, data pribadi identitas, kredensial akun penting, serta informasi rahasia lainnya yang memiliki nilai finansial atau strategis.</p>
+                
+                <div class="info-box">
+                    <h4>Asal Usul Istilah "Phishing"</h4>
+                    <p>Istilah "phishing" merupakan varian dari kata "fishing" (memancing) yang pertama kali digunakan pada pertengahan 1990-an. Konsep ini menggambarkan bagaimana penyerang "memancing" korban dengan menggunakan "umpan" digital yang menarik. Awalnya, serangan phishing difokuskan pada pencurian kredensial AOL (America Online), dan sejak itu terus berevolusi menjadi bentuk yang lebih canggih dan terarget. Huruf "ph" berasal dari tradisi hacker lama yang mengganti "f" dengan "ph", yang juga terlihat pada istilah "phreaking" (manipulasi jaringan telepon).</p>
+                </div>
+                
+                <p>Serangan phishing biasanya dilakukan melalui berbagai saluran komunikasi digital, dengan email sebagai media paling umum (menyumbang sekitar 65% dari semua serangan phishing), diikuti oleh pesan teks (smishing), panggilan telepon (vishing), pesan instan, platform media sosial, dan bahkan iklan online (malvertising). Pelaku membuat komunikasi yang tampak sah secara visual dan kontekstual, kemudian menggunakan taktik psikologis untuk menciptakan rasa urgensi, ketakutan, atau keserakahan yang mendorong korban untuk mengambil tindakan tertentu tanpa berpikir kritis.</p>
+                
+                <h3>Karakteristik Utama Serangan Phishing</h3>
+                <ul>
+                    <li><strong>Penyamaran Identitas:</strong> Penyerang menyembunyikan identitas asli mereka dan menyamar sebagai entitas tepercaya menggunakan logo, warna, tata letak, dan bahasa yang mirip dengan organisasi asli.</li>
+                    <li><strong>Penciptaan Rasa Urgensi:</strong> Pesan phishing sering menciptakan situasi mendesak yang memaksa korban bertindak cepat tanpa verifikasi, seperti "akun Anda akan dinonaktifkan dalam 24 jam" atau "deteksi aktivitas mencurigakan".</li>
+                    <li><strong>Manipulasi Emosional:</strong> Menggunakan taktik psikologis seperti memanfaatkan rasa takut (ancaman keamanan), keserakahan (hadiah atau keuntungan), atau rasa ingin membantu (permintaan darurat).</li>
+                    <li><strong>Permintaan Informasi Sensitif:</strong> Meminta korban untuk memberikan informasi pribadi, finansial, atau kredensial login melalui formulir online atau balasan pesan.</li>
+                    <li><strong>Tautan atau Lampiran Berbahaya:</strong> Menyertakan tautan yang mengarah ke situs web palsu atau lampiran yang mengandung malware untuk menginfeksi perangkat korban.</li>
+                    <li><strong>Kesalahan yang Disengaja:</strong> Beberapa penyerang sengaja memasukkan kesalahan tata bahasa atau ejaan untuk menyaring korban yang lebih waspada, sehingga hanya target yang paling mudah tertipu yang akan merespons.</li>
+                </ul>
+                
+                <p>Perkembangan teknologi telah membuat serangan phishing semakin sulit dideteksi. Teknik seperti <span class="highlight">homograph attack</span> (menggunakan karakter Unicode yang mirip dengan huruf Latin), <span class="highlight">typosquatting</span> (mendaftarkan domain dengan salah eja nama merek terkenal), dan <span class="highlight">spear phishing yang sangat terpersonalisasi</span> telah meningkatkan efektivitas serangan ini secara signifikan. Menurut laporan keamanan siber terbaru, lebih dari 3,4 miliar email phishing dikirim setiap hari di seluruh dunia, dengan tingkat keberhasilan yang mengkhawatirkan karena manusia tetap menjadi mata rantai terlemah dalam keamanan siber.</p>
+            </section>
+            
+            <!-- Bagian 2: Mekanisme Serangan -->
+            <section id="mekanisme" class="section animate-fade-in-up delay-2">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h2>Mekanisme dan Tahapan Serangan Phishing: Bagaimana Penipuan Digital Bekerja</h2>
+                </div>
+                
+                <p>Serangan phishing bukanlah tindakan acak, melainkan proses terstruktur yang mengikuti pola tertentu. Memahami mekanisme ini sangat penting untuk mengidentifikasi dan mencegah serangan sebelum menyebabkan kerugian. Berikut adalah tahapan lengkap serangan phishing modern:</p>
+                
+                <h3>Tahap 1: Perencanaan dan Persiapan (Reconnaissance)</h3>
+                <p>Pada tahap ini, penyerang melakukan penelitian mendalam untuk menentukan target dan metode yang paling efektif. Kegiatan termasuk:</p>
+                <ul>
+                    <li><strong>Identifikasi Target:</strong> Memilih korban potensial berdasarkan kriteria seperti pekerjaan, akses ke sistem sensitif, atau kerentanan psikologis.</li>
+                    <li><strong>Pengumpulan Intelijen:</strong> Mengumpulkan informasi tentang target melalui media sosial, forum online, kebocoran data, atau teknik OSINT (Open Source Intelligence).</li>
+                    <li><strong>Pemilihan Vektor Serangan:</strong> Menentukan saluran serangan terbaik (email, SMS, telepon, media sosial) berdasarkan profil target.</li>
+                    <li><strong>Pembuatan Aset Palsu:</strong> Mengembangkan situs web tiruan, template email, atau skrip telepon yang meyakinkan.</li>
+                </ul>
+                
+                <h3>Tahap 2: Pengiriman dan Penyebaran (Delivery)</h3>
+                <p>Penyerang meluncurkan kampanye phishing dengan mengirimkan pesan berbahaya ke target yang telah ditentukan:</p>
+                <ul>
+                    <li><strong>Pengiriman Massal:</strong> Untuk phishing tradisional, ribuan hingga jutaan pesan dikirim secara otomatis menggunakan daftar email yang diperoleh dari sumber ilegal.</li>
+                    <li><strong>Pengiriman Terarget:</strong> Untuk spear phishing, pesan dikirim ke individu atau kelompok tertentu dengan konten yang dipersonalisasi.</li>
+                    <li><strong>Pemalsuan Identitas:</strong> Penyerang memalsukan alamat pengirim (spoofing) agar tampak berasal dari sumber terpercaya.</li>
+                    <li><strong>Pengoptimalan Waktu:</strong> Pesan sering dikirim pada waktu yang strategis, seperti hari kerja pagi ketika orang cenderung memeriksa email dengan cepat, atau menjelang akhir pekan ketika dukungan IT mungkin kurang responsif.</li>
+                </ul>
+                
+                <div class="info-box">
+                    <h4>Teknik Spoofing yang Umum Digunakan</h4>
+                    <ul>
+                        <li><strong>Email Spoofing:</strong> Memalsukan alamat pengirim di header email sehingga tampak berasal dari domain resmi.</li>
+                        <li><strong>Website Spoofing:</strong> Membuat salinan situs web resmi dengan URL yang mirip (misalnya: paypa1.com bukan paypal.com).</li>
+                        <li><strong>Caller ID Spoofing:</strong> Memalsukan nomor telepon yang muncul di penelepon agar tampak sebagai nomor resmi organisasi.</li>
+                        <li><strong>Link Manipulation:</strong> Menggunakan tautan yang tampak sah tetapi mengarah ke situs berbahaya, atau menggunakan redirect berlapis.</li>
+                    </ul>
+                </div>
+                
+                <h3>Tahap 3: Penipuan dan Eksploitasi (Deception & Exploitation)</h3>
+                <p>Ini adalah tahap kritis di mana korban berinteraksi dengan konten phishing:</p>
+                <ul>
+                    <li><strong>Engagement:</strong> Korban membuka email, mengklik tautan, atau membuka lampiran.</li>
+                    <li><strong>Pembujukan:</strong> Penyerang menggunakan teknik persuasif untuk membuat korban memberikan informasi sensitif atau mengunduh malware.</li>
+                    <li><strong>Pengumpulan Data:</strong> Informasi yang dimasukkan korban pada formulir palsu dikirim ke server yang dikendalikan penyerang.</li>
+                    <li><strong>Infeksi Malware:</strong> Jika melibatkan lampiran berbahaya, malware diinstal pada perangkat korban untuk mencuri data lebih lanjut atau memberikan akses jarak jauh.</li>
+                </ul>
+                
+                <h3>Tahap 4: Penyalahgunaan dan Monetisasi (Abuse & Monetization)</h3>
+                <p>Setelah berhasil memperoleh data korban, penyerang memanfaatkannya untuk keuntungan:</p>
+                <ul>
+                    <li><strong>Penjualan Data:</strong> Informasi yang dicuri dijual di pasar gelap (dark web) kepada penjahat siber lainnya.</li>
+                    <li><strong>Pencurian Identitas:</strong> Data pribadi digunakan untuk membuat identitas palsu, mengajukan pinjaman, atau melakukan penipuan lainnya.</li>
+                    <li><strong>Akses Tidak Sah:</strong> Kredensial login digunakan untuk mengakses akun korban dan mencuri aset digital atau informasi sensitif.</li>
+                    <li><strong>Pemerasan:</strong> Dalam kasus ransomware atau sextortion, penyerang meminta tebusan untuk tidak membocorkan data korban.</li>
+                    <li><strong>Peluncuran Serangan Lanjutan:</strong> Akses yang diperoleh digunakan sebagai batu loncatan untuk serangan yang lebih kompleks terhadap organisasi target.</li>
+                </ul>
+                
+                <h3>Tahap 5: Penutupan Jejak (Covering Tracks)</h3>
+                <p>Penyerang berusaha menghilangkan bukti dan melindungi identitas mereka:</p>
+                <ul>
+                    <li><strong>Penghapusan Log:</strong> Menghapus catatan aktivitas dari server yang disusupi.</li>
+                    <li><strong>Penggunaan Proksi dan VPN:</strong> Menyembunyikan alamat IP asli melalui jaringan yang tidak dapat dilacak.</li>
+                    <li><strong>Pembersihan Aset:</strong> Menghapus situs phishing, akun email, dan aset digital lainnya yang digunakan dalam serangan.</li>
+                    <li><strong>Pencucian Uang:</strong> Mentransfer dana yang diperoleh melalui serangkaian transaksi kompleks untuk menyembunyikan asal usulnya.</li>
+                </ul>
+                
+                <div class="danger-box">
+                    <h4>Siklus Hidup Data Korban di Pasar Gelap</h4>
+                    <p>Data yang berhasil dicuri melalui phishing biasanya mengikuti siklus hidup di pasar gelap: (1) Pengumpulan dan pengelompokan data, (2) Verifikasi kualitas data, (3) Penjualan kepada pembeli pertama (biasanya penipu skala kecil), (4) Penggunaan data untuk penipuan langsung, (5) Penjualan ulang data yang masih valid kepada pembeli berikutnya, (6) Penggunaan data untuk serangan yang lebih canggih seperti BEC (Business Email Compromise), (7) Akhirnya data menjadi tidak bernilai karena sudah diperbarui atau diblokir oleh korban.</p>
+                </div>
+            </section>
+            
+            <!-- Bagian 3: Contoh Link Phishing -->
+            <section id="contoh" class="section animate-fade-in-up delay-3">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h2>Contoh Link Phishing: Mengenali dan Membedakan yang Asli dengan yang Palsu</h2>
+                </div>
+                
+                <p>Kemampuan untuk mengenali tautan phishing adalah keterampilan kritis di era digital. Penyerang semakin canggih dalam membuat tautan yang tampak sah, tetapi dengan pemeriksaan yang cermat, Anda dapat mengidentifikasi tanda-tanda penipuan. Berikut adalah analisis mendalam tentang berbagai jenis tautan phishing dan cara mendeteksinya:</p>
+                
+                <div class="example-container">
+                    <div class="example-title">
+                        <i class="fas fa-skull-crossbones"></i> Contoh Tautan Phishing yang Sering Ditemui
+                    </div>
+                    
+                    <p><strong>Tautan Berbahaya:</strong></p>
+                    <div class="phishing-link-example">
+                        https://secure-verification-facebook.xyz/login/authenticate
+                    </div>
+                    <p><strong>Analisis:</strong> Domain "xyz" bukanlah ekstensi yang digunakan Facebook secara resmi (facebook.com). Penggunaan "secure-verification" adalah trik psikologis untuk menciptakan kesan keamanan palsu.</p>
+                    
+                    <div class="phishing-link-example">
+                        https://www.paypa1-security-update.com/account/confirm
+                    </div>
+                    <p><strong>Analisis:</strong> Huruf "l" diganti dengan angka "1" (paypa1 bukan paypal). Ini adalah teknik typosquatting yang umum dimana penyerang berharap korban tidak memperhatikan perbedaan kecil.</p>
+                    
+                    <div class="phishing-link-example">
+                        https://dana-indonesia.verifikasi-akun.secure-login.net
+                    </div>
+                    <p><strong>Analisis:</strong> Meskipun mengandung kata "dana-indonesia", domain utama adalah "secure-login.net" bukan "dana.id". Subdomain dapat dibuat oleh siapa saja dan tidak mengindikasikan kepemilikan resmi.</p>
+                    
+                    <div class="phishing-link-example">
+                        https://login.microsoftonline.com.confirm-identity.com
+                    </div>
+                    <p><strong>Analisis:</strong> Ini adalah contoh subdomain phishing yang canggih. Bagian sebelum "confirm-identity.com" adalah subdomain, bukan domain utama. Domain sebenarnya adalah "confirm-identity.com", bukan "microsoftonline.com".</p>
+                    
+                    <div class="phishing-link-example">
+                        https://tinyurl.com/facebook-login-secure
+                    </div>
+                    <p><strong>Analisis:</strong> Layanan pemendek URL seperti TinyURL menyembunyikan tujuan sebenarnya. Anda tidak dapat mengetahui situs tujuan tanpa mengkliknya, membuatnya sangat berisiko.</p>
+                </div>
+                
+                <div class="example-container">
+                    <div class="example-title">
+                        <i class="fas fa-check-circle"></i> Contoh Tautan Resmi yang Sah (Sebagai Perbandingan)
+                    </div>
+                    
+                    <div class="phishing-link-example legitimate-link">
+                        https://www.facebook.com/login
+                    </div>
+                    
+                    <div class="phishing-link-example legitimate-link">
+                        https://www.paypal.com/signin
+                    </div>
+                    
+                    <div class="phishing-link-example legitimate-link">
+                        https://www.dana.id/login
+                    </div>
+                    
+                    <div class="phishing-link-example legitimate-link">
+                        https://login.microsoftonline.com
+                    </div>
+                </div>
+                
+                <h3>Teknik Advanced URL Obfuscation yang Digunakan Penyerang</h3>
+                <p>Penyerang modern menggunakan berbagai teknik untuk menyembunyikan sifat berbahaya dari tautan mereka:</p>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Teknik Penyamaran URL</th>
+                            <th>Contoh</th>
+                            <th>Bagaimana Mendeteksinya</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>IDN Homograph Attack</strong></td>
+                            <td class="phishing-indicator">https://www.аррӏе.com (menggunakan karakter Cyrillic)</td>
+                            <td>Periksa dengan meng-copy URL ke editor teks dan lihat karakter ASCII-nya</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subdomain Deception</strong></td>
+                            <td class="phishing-indicator">https://google.com.security-alert.xyz</td>
+                            <td>Baca URL dari kanan ke kiri - domain utama adalah yang tepat sebelum TLD (.com, .net, dll)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>URL Shortening Services</strong></td>
+                            <td class="phishing-indicator">bit.ly/3kPq9Xz</td>
+                            <td>Gunakan preview tools atau hindari mengklik tautan yang dipendekkan dari sumber tidak dikenal</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HTTPS dengan sertifikat palsu</strong></td>
+                            <td class="phishing-indicator">https://secure-banklogin.com (dengan gembok hijau)</td>
+                            <td>Klik ikon gembok di browser untuk melihat detail sertifikat dan penerbitnya</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Karakter escape dan encoding</strong></td>
+                            <td class="phishing-indicator">https://paypal.com%2F%40login.fake.com</td>
+                            <td>%2F mewakili "/" - URL sebenarnya adalah fake.com, bukan paypal.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="info-box">
+                    <h4>Panduan Praktis Memeriksa URL</h4>
+                    <ol>
+                        <li><strong>Selalu periksa protokol:</strong> Pastikan situs yang meminta informasi sensitif menggunakan HTTPS (bukan HTTP).</li>
+                        <li><strong>Periksa domain utama:</strong> Cari bagian tepat sebelum ekstensi (.com, .id, .co.id) - itulah domain sebenarnya.</li>
+                        <li><strong>Waspadai karakter khusus:</strong> Perhatikan penggunaan angka (0, 1, 4) yang menggantikan huruf (o, l, a) dan karakter Unicode.</li>
+                        <li><strong>Gunakan tools verifikasi:</strong> Layanan seperti VirusTotal, URLScan.io, atau Google Safe Browsing dapat memindai URL mencurigakan.</li>
+                        <li><strong>Jangan percaya pada tampilan saja:</strong> Hyperlink dapat menampilkan teks yang berbeda dengan URL sebenarnya. Arahkan kursor (tanpa mengklik) untuk melihat URL tujuan.</li>
+                        <li><strong>Verifikasi melalui saluran resmi:</strong> Jika ragu, kunjungi situs resmi secara manual dengan mengetikkan URL sendiri di browser.</li>
+                    </ol>
+                </div>
+                
+                <p>Menurut penelitian terbaru dari APWG (Anti-Phishing Working Group), lebih dari 75% situs phishing sekarang menggunakan sertifikat SSL, membuat mereka tampak memiliki "gembok hijau" yang biasanya diasosiasikan dengan keamanan. Ini menunjukkan bahwa keberadaan HTTPS saja tidak cukup untuk menjamin keaslian sebuah situs. Kombinasi pemeriksaan visual, analisis URL, dan verifikasi melalui saluran resmi tetap diperlukan untuk perlindungan menyeluruh.</p>
+            </section>
+            
+            <!-- Bagian 4: Studi Kasus Mendalam -->
+            <section id="studi-kasus" class="section animate-fade-in-up delay-4">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h2>Studi Kasus Mendalam: FreeFire Beta Scam dan Ekosistem Penipuan Game Digital</h2>
+                </div>
+                
+                <div class="case-study">
+                    <div class="case-study-badge">STUDI KASUS UNIK</div>
+                    <h3 class="case-study-title">Operasi "FF Beta Harvest": Bagaimana Penipu Membangun Ladang Data dari Penggemar Game</h3>
+                    <div class="case-study-subtitle">Analisis berdasarkan investigasi Mervion dan laporan keamanan siber 2024-2025</div>
+                    
+                    <p>Kasus FreeFire Beta Scam merupakan contoh canggih dari phishing yang memanfaatkan popularitas game online untuk menciptakan ekosistem penipuan berlapis. Berikut adalah analisis mendalam tentang mekanisme operasi ini:</p>
+                    
+                    <div class="case-study-step">
+                        <h4>Fase 1: Penciptaan Umpan Digital (Bait Creation)</h4>
+                        <p>Penipu mengidentifikasi tren di komunitas gamer - dalam hal ini, antusiasme terhadap versi beta game FreeFire yang eksklusif. Mereka membuat konten menarik termasuk:</p>
+                        <ul>
+                            <li>Video gameplay "eksklusif" dari "versi beta" yang sebenarnya adalah rekaman gameplay biasa dengan efek visual tambahan.</li>
+                            <li>Gambar grafis yang dibuat secara profesional menampilkan "fitur baru" yang tidak ada di versi resmi.</li>
+                            <li>Testimonial palsu dari "pengguna beta" yang mengklaim mendapatkan keuntungan besar.</li>
+                            <li>Banner iklan yang mencolok dengan tagline seperti "Akses Eksklusif FreeFire Beta - Terbatas untuk 1000 Pengguna Pertama!"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-study-step">
+                        <h4>Fase 2: Distribusi dan Promosi (Distribution & Promotion)</h4>
+                        <p>Kampanye promosi dilakukan melalui berbagai saluran untuk menjangkau korban potensial:</p>
+                        <ul>
+                            <li><strong>Media Sosial:</strong> Grup Facebook, Telegram, dan Discord komunitas FreeFire diinvasi dengan postingan dan komentar yang mengarahkan ke situs phishing.</li>
+                            <li><strong>Forum dan Komunitas Game:</strong> Thread dibuat di forum game populer dengan tautan mencurigakan yang diklaim mengarah ke pendaftaran beta.</li>
+                            <li><strong>Video Platform:</strong> Video YouTube dengan deskripsi yang berisi tautan berbahaya, sering kali menggunakan kata kunci trending untuk meningkatkan visibilitas.</li>
+                            <li><strong>Aplikasi Pesan:</strong> Pesan berantai disebarkan melalui WhatsApp, Line, dan aplikasi pesan lainnya dengan iming-iming akses eksklusif.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-study-step">
+                        <h4>Fase 3: Infrastruktur Penipuan (Fraud Infrastructure)</h4>
+                        <p>Penipu membangun infrastruktur teknis yang kompleks untuk mengeksekusi penipuan:</p>
+                        <ul>
+                            <li><strong>Situs Web Palsu:</strong> Mendesain replika situs FreeFire yang meyakinkan dengan formulir pendaftaran "beta".</li>
+                            <li><strong>Server Pengumpul Data:</strong> Mengatur database untuk menyimpan kredensial yang dicuri.</li>
+                            <li><strong>Sistem Otomasi:</strong> Mengembangkan skrip untuk secara otomatis mengirim email konfirmasi palsu dan menghasilkan "akun beta" fiktif.</li>
+                            <li><strong>Layanan Email Khusus:</strong> Membuat alamat email yang tampak resmi seperti "support@freefire-beta.com" untuk meningkatkan kredibilitas.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-study-step">
+                        <h4>Fase 4: Proses Penipuan (Fraud Execution)</h4>
+                        <p>Ketika korban terlibat, proses penipuan berlangsung dalam beberapa tahap:</p>
+                        <ol>
+                            <li>Korban mengklik tautan yang mengarah ke situs web FF Beta palsu.</li>
+                            <li>Korban diminta mengunduh "launcher khusus" atau "aplikasi akses beta" yang sebenarnya adalah malware atau aplikasi tidak berguna.</li>
+                            <li>Korban diminta membuat "akun beta" dengan memasukkan email, kata sandi, dan terkadang data pribadi lainnya.</li>
+                            <li>Sistem menghasilkan "kode akses eksklusif" atau "akun beta" yang sebenarnya adalah string acak tanpa nilai.</li>
+                            <li>Email dan data korban masuk ke database penipu yang dijuluki "ladang" (farming field).</li>
+                            <li>Korban mencoba login dengan kredensial yang sama di game asli, tidak menyadari bahwa mereka baru saja memberikan data login mereka kepada penipu.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="case-study-step">
+                        <h4>Fase 5: Monetisasi dan Ekspansi (Monetization & Expansion)</h4>
+                        <p>Data yang berhasil dikumpulkan kemudian dimonetisasi melalui berbagai saluran:</p>
+                        <ul>
+                            <li><strong>Penjualan Langsung:</strong> "Ladang" email dijual di forum dark web dengan harga mulai dari $100 untuk 1000 akun verifikasi game.</li>
+                            <li><strong>Metode "FF":</strong> Data dijual dengan label "metode FF" yang berarti akun game FreeFire yang dapat diakses menggunakan kredensial yang dicuri.</li>
+                            <li><strong>Credential Stuffing:</strong> Kombinasi email/kata sandi dicoba pada berbagai layanan lain (email, media sosial, e-commerce) karena banyak orang menggunakan kata sandi yang sama di beberapa platform.</li>
+                            <li><strong>Pengambilan Alih Akun:</strong> Akun game dengan item berharga diambil alih dan dijual kembali atau item dalam game dicuri dan diperdagangkan.</li>
+                            <li><strong>Ransomware Sekunder:</strong> Beberapa korban menerima email pemerasan mengancam akan membocorkan data mereka kecuali membayar tebusan.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="danger-box">
+                        <h4>Dampak Psikologis dan Sosial pada Korban</h4>
+                        <p>Selain kerugian materi, korban penipuan ini sering mengalami:</p>
+                        <ul>
+                            <li><strong>Rasa Malu dan Kesalahan Diri:</strong> Banyak korban merasa malu karena tertipu sehingga tidak melaporkan kejadian tersebut.</li>
+                            <li><strong>Kehilangan Kepercayaan:</strong> Korban menjadi skeptis terhadap semua tawaran online, termasuk yang sah.</li>
+                            <li><strong>Tekanan Sosial:</strong> Dalam komunitas game, korban mungkin diejek atau diasingkan karena "kecerobohan" mereka.</li>
+                            <li><strong>Kekhawatiran Berkelanjutan:</strong> Ketakutan bahwa data pribadi mereka akan disalahgunakan di masa depan.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="success-box">
+                        <h4>Pelajaran yang Dapat Diambil dari Kasus Ini</h4>
+                        <ol>
+                            <li><strong>Verifikasi Sumber Resmi:</strong> Selalu kunjungi situs resmi game atau developer untuk informasi tentang versi beta, bukan melalui tautan pihak ketiga.</li>
+                            <li><strong>Gunakan Email Khusus untuk Game:</strong> Pertimbangkan untuk membuat email terpisah khusus untuk pendaftaran game dan platform online.</li>
+                            <li><strong>Aktifkan Two-Factor Authentication (2FA):</strong> Bahkan jika kata sandi dicuri, 2FA dapat mencegah akses tidak sah ke akun Anda.</li>
+                            <li><strong>Waspada terhadap "Hadiah Gratis":</strong> Di dunia digital, hampir tidak ada yang benar-benar gratis - tawaran yang terlalu bagus untuk menjadi kenyataan biasanya adalah penipuan.</li>
+                            <li><strong>Edukasi Komunitas:</strong> Bagikan pengetahuan tentang penipuan ini dengan sesama gamer untuk melindungi komunitas secara keseluruhan.</li>
+                        </ol>
+                    </div>
+                    
+                    <p>Kasus FreeFire Beta Scam mengajarkan kita bahwa penipu terus berinovasi dan memanfaatkan minat populer untuk menjalankan operasi mereka. Menurut data investigasi, operasi ini berhasil mengumpulkan lebih dari 500.000 alamat email dan kredensial sebelum akhirnya ditutup oleh otoritas. Namun, pola serupa terus muncul dengan target game populer lainnya, menekankan pentingnya kewaspadaan berkelanjutan dalam komunitas gaming.</p>
+                    
+                    <p>Sebagai penutup bagian ini, ingatlah prinsip dasar: <span class="highlight">"Keamananmu berasal dari kewaspadaanmu"</span>. Di dunia game online yang penuh dengan kompetisi dan keinginan untuk mendapatkan keunggulan, godaan untuk mengklaim tawaran eksklusif sangat kuat. Namun, ketahanan terhadap godaan ini dan komitmen untuk selalu memverifikasi melalui saluran resmi adalah pertahanan terbaik melawan penipuan semacam ini.</p>
+                </div>
+            </section>
+            
+            <!-- Bagian 5: Dampak dan Konsekuensi -->
+            <section id="dampak" class="section animate-fade-in-up delay-1">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h2>Dampak dan Konsekuensi: Apa yang Terjadi Jika Anda Mengisi Data di Link Phishing?</h2>
+                </div>
+                
+                <p>Mengisi data pribadi pada situs phishing bukanlah kesalahan sederhana yang dapat diatasi dengan hanya mengganti kata sandi. Ini adalah insiden keamanan serius dengan konsekuensi berlapis dan jangka panjang. Berikut adalah analisis komprehensif tentang dampak yang mungkin terjadi, dikategorikan berdasarkan tingkat keparahan dan jangka waktu:</p>
+                
+                <h3>Konsekuensi Langsung (0-24 Jam Setelah Insiden)</h3>
+                <div class="danger-box">
+                    <ul>
+                        <li><strong>Pencurian Kredensial Login:</strong> Email dan kata sandi yang Anda masukkan sekarang berada di tangan penyerang, memberikan mereka akses instan ke akun terkait.</li>
+                        <li><strong>Akses Tidak Sah ke Akun:</strong> Penyerang dapat langsung login ke akun email, media sosial, atau layanan lain jika Anda menggunakan kredensial yang sama.</li>
+                        <li><strong>Pencurian Identitas Awal:</strong> Data pribadi seperti nama, alamat, tanggal lahir, dan nomor telepon sudah dapat digunakan untuk memulai proses pencurian identitas.</li>
+                        <li><strong>Infeksi Malware:</strong> Jika Anda mengunduh lampiran atau mengklik tautan tertentu, perangkat Anda mungkin sudah terinfeksi malware yang mencuri data tambahan.</li>
+                        <li><strong>Notifikasi Aktivitas Mencurigakan:</strong> Layanan yang Anda gunakan mungkin mengirim peringatan tentang login dari lokasi atau perangkat yang tidak dikenal.</li>
+                    </ul>
+                </div>
+                
+                <h3>Konsekuensi Jangka Pendek (1-7 Hari Setelah Insiden)</h3>
+                <ul>
+                    <li><strong>Pengambilalihan Akun Lengkap:</strong> Penyerang dapat mengganti informasi pemulihan akun (email pemulihan, nomor telepon) sehingga Anda terkunci dari akun sendiri.</li>
+                    <li><strong>Penipuan Finansial Langsung:</strong> Jika data kartu kredit atau rekening bank terpapar, penyerang dapat melakukan transaksi tidak sah, pembelian online, atau transfer dana.</li>
+                    <li><strong>Penyebaran Serangan Lanjutan:</strong> Dari akun email yang disusupi, penyerang dapat mengirim email phishing ke kontak Anda, memperluas jangkauan serangan.</li>
+                    <li><strong>Pemerasan dan Ransomware:</strong> Beberapa penyerang mengirim email pemerasan mengancam akan membocorkan informasi pribadi atau data sensitif kecuali tebusan dibayarkan.</li>
+                    <li><strong>Kerusakan Reputasi Digital:</strong> Akun media sosial yang diretas dapat digunakan untuk memposting konten tidak pantas atau mengirim pesan penipuan kepada teman dan kolega Anda.</li>
+                </ul>
+                
+                <h3>Konsekuensi Jangka Menengah (1-6 Bulan Setelah Insiden)</h3>
+                <ul>
+                    <li><strong>Pencurian Identitas Sistemik:</strong> Data pribadi Anda digunakan untuk membuat identitas palsu, mengajukan pinjaman, membuka rekening bank, atau melakukan kejahatan atas nama Anda.</li>
+                    <li><strong>Penjualan Data di Pasar Gelap:</strong> Informasi Anda dijual dan dibeli berulang kali di forum dark web, memperluas lingkaran penjahat yang memiliki akses ke data Anda.</li>
+                    <li><strong>Masalah Kredit dan Finansial:</strong> Jika penyerang mengajukan pinjaman atas nama Anda, ini akan merusak nilai kredit Anda dan menyebabkan masalah hukum yang rumit.</li>
+                    <li><strong>Targeting untuk Serangan yang Lebih Spesifik:</strong> Dengan informasi pribadi yang lengkap, Anda menjadi target ideal untuk spear phishing yang lebih personal dan berbahaya.</li>
+                    <li><strong>Kehilangan Akses Permanen ke Akun:</strong> Beberapa layanan mungkin menangguhkan atau menutup akun yang disusupi, terutama jika digunakan untuk aktivitas berbahaya.</li>
+                </ul>
+                
+                <h3>Konsekuensi Jangka Panjang (6+ Bulan Setelah Insiden)</h3>
+                <ul>
+                    <li><strong>Kerusakan Reputasi Permanen:</strong> Informasi sensitif yang dibocorkan dapat muncul dalam pencarian online bertahun-tahun kemudian, memengaruhi prospek pekerjaan dan hubungan profesional.</li>
+                    <li><strong>Masalah Hukum Berkelanjutan:</strong> Jika identitas Anda digunakan untuk kejahatan, Anda mungkin menghadapi investigasi hukum yang memakan waktu dan biaya.</li>
+                    <li><strong>Kehilangan Aset Digital Berharga:</strong> Akun game dengan item langka, dompet kripto, atau aset digital lainnya mungkin tidak dapat dipulihkan.</li>
+                    <li><strong>Trauma Psikologis:</strong> Banyak korban mengalami kecemasan berkelanjutan, paranoia digital, dan kehilangan kepercayaan dalam berinteraksi online.</li>
+                    <li><strong>Biaya Finansial Kumulatif:</strong> Antara biaya hukum, layanan pemulihan identitas, dan kerugian langsung, total biaya dapat mencapai ribuan bahkan puluhan ribu dolar.</li>
+                </ul>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">$4.35 Jt</div>
+                        <div class="stat-text">Kerugian rata-rata akibat serangan BEC yang diawali phishing</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">245 Hari</div>
+                        <div class="stat-text">Waktu rata-rata untuk mendeteksi pelanggaran data phishing</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">65%</div>
+                        <div class="stat-text">Organisasi mengalami serangan phishing yang berhasil pada 2024</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">300K+</div>
+                        <div class="stat-text">Situs phishing baru terdeteksi setiap bulan secara global</div>
+                    </div>
+                </div>
+                
+                <h3>Dampak pada Tingkat Organisasi dan Bisnis</h3>
+                <p>Jika data yang terpapar terkait dengan pekerjaan atau bisnis, konsekuensinya bahkan lebih luas:</p>
+                <ul>
+                    <li><strong>Pelanggaran Data Perusahaan:</strong> Akses ke akun email kerja dapat menyebabkan kebocoran data sensitif perusahaan, rahasia dagang, atau informasi klien.</li>
+                    <li><strong>Business Email Compromise (BEC):</strong> Penyerang dapat menyamar sebagai eksekutif dan memerintahkan transfer dana atau tindakan berbahaya lainnya.</li>
+                    <li><strong>Ransomware dan Enkripsi Data:</strong> Akses awal melalui phishing sering menjadi pintu masuk untuk serangan ransomware yang mengenkripsi seluruh sistem perusahaan.</li>
+                    <li><strong>Tuntutan Hukum dan Denda Regulasi:</strong> Perusahaan dapat menghadapi tuntutan hukum dan denda besar karena gagal melindungi data pelanggan atau karyawan.</li>
+                    <li><strong>Kerusakan Reputasi Perusahaan:</strong> Kepercayaan pelanggan dan mitra bisnis dapat hancur, menyebabkan kerugian finansial jangka panjang.</li>
+                </ul>
+                
+                <div class="info-box">
+                    <h4>Studi Kasus Nyata: Kerugian Finansial Langsung</h4>
+                    <p>Pada tahun 2023, sebuah perusahaan menengah di AS kehilangan $1.2 juta akibat serangkaian transfer yang tidak sah. Investigasi mengungkapkan bahwa serangan dimulai ketika seorang akuntan mengklik tautan dalam email phishing yang tampak seperti notifikasi Zoom. Tautan tersebut mengarah ke halaman login Office 365 palsu di mana kredensial dicuri. Penyerang kemudian memantau email selama 3 minggu sebelum memulai serangan BEC, menyamar sebagai CEO dan meminta transfer mendesak ke "vendor baru". Butuh 5 hari bagi perusahaan untuk menyadari penipuan, dan hanya 40% dari dana yang berhasil dipulihkan setelah proses hukum yang panjang.</p>
+                </div>
+                
+                <h3>Proses Pemulihan yang Kompleks dan Mahal</h3>
+                <p>Memulihkan diri dari insiden phishing bukanlah proses sederhana. Biasanya melibatkan:</p>
+                <ol>
+                    <li><strong>Isolasi dan Penilaian:</strong> Mengidentifikasi semua sistem yang terpengaruh dan menilai tingkat kerusakan.</li>
+                    <li><strong>Pemulihan Akun:</strong> Proses panjang untuk memverifikasi identitas dan mendapatkan kembali akses ke akun yang disusupi.</li>
+                    <li><strong>Pemantauan Kredit dan Identitas:</strong> Berlangganan layanan pemantauan kredit dan mungkin membekukan kredit untuk mencegah penipuan lebih lanjut.</li>
+                    <li><strong>Pelaporan Hukum:</strong> Melaporkan ke polisi siber, otoritas keuangan, dan lembaga terkait lainnya.</li>
+                    <li><strong>Peningkatan Keamanan:</strong> Mengimplementasikan langkah-langkah keamanan tambahan di semua akun dan perangkat.</li>
+                    <li><strong>Pendidikan Ulang:</strong> Mengikuti pelatihan keamanan siber untuk mencegah insiden serupa di masa depan.</li>
+                </ol>
+                
+                <p>Rata-rata, korban individu menghabiskan 100-200 jam dan $1,000-$2,000 dalam biaya langsung untuk memulihkan diri dari pencurian identitas yang disebabkan phishing. Untuk bisnis, biayanya bisa 10-100 kali lipat lebih besar, belum termasuk kerugian reputasi dan kepercayaan yang tidak terhitung.</p>
+                
+                <p>Kesimpulannya, mengisi data pada situs phishing bukanlah kesalahan kecil. Ini adalah titik awal dari serangkaian konsekuensi yang dapat memengaruhi kehidupan digital, finansial, dan bahkan pribadi Anda selama bertahun-tahun yang akan datang. Pemahaman menyeluruh tentang dampak ini seharusnya menjadi motivasi kuat untuk selalu menerapkan kewaspadaan ekstrem saat berinteraksi dengan komunikasi digital yang meminta informasi sensitif.</p>
+            </section>
+            
+            <!-- Bagian 6: Jenis-Jenis Phishing -->
+            <section id="jenis" class="section animate-fade-in-up delay-2">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h2>Jenis-Jenis Phishing: Klasifikasi Lengkap dari Teknik Penipuan Digital Modern</h2>
+                </div>
+                
+                <p>Dunia phishing telah berkembang jauh dari sekadar email massal yang buruk tata bahasanya. Saat ini, penyerang menggunakan berbagai teknik khusus yang disesuaikan dengan platform target, psikologi korban, dan tujuan serangan. Memahami klasifikasi lengkap jenis-jenis phishing adalah langkah penting dalam membangun pertahanan yang efektif. Berikut adalah analisis komprehensif tentang berbagai bentuk phishing modern:</p>
+                
+                <div class="types-grid">
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="type-title">1. Email Phishing (Mass Phishing)</h4>
+                        <p>Metode paling tradisional dan masih paling umum. Penyerang mengirim ribuan email generik yang tampak berasal dari perusahaan tepercaya seperti bank, PayPal, atau Netflix. Email ini biasanya berisi permintaan untuk memverifikasi akun, mengonfirmasi informasi pembayaran, atau mengklaim masalah keamanan yang memerlukan tindakan segera. Meski tingkat keberhasilannya lebih rendah dibanding metode target, volume besar yang dikirim masih menghasilkan banyak korban.</p>
+                        <p><strong>Ciri Khas:</strong> Pengirim yang dipalsukan, tautan berbahaya, lampiran malware, tata bahasa yang kadang buruk, dan rasa urgensi yang diciptakan.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4 class="type-title">2. Spear Phishing (Targeted Phishing)</h4>
+                        <p>Serangan yang sangat terpersonalisasi terhadap individu atau kelompok tertentu. Penyerang melakukan penelitian mendalam tentang target mereka (melalui media sosial, situs perusahaan, atau kebocoran data) untuk membuat pesan yang sangat relevan dan meyakinkan. Spear phishing sering menargetkan karyawan dengan akses ke sistem sensitif atau informasi finansial. Tingkat keberhasilan jauh lebih tinggi karena personalisasi yang canggih.</p>
+                        <p><strong>Ciri Khas:</strong> Referensi personal (nama, jabatan, proyek kerja), pengirim yang tampak seperti kolega atau atasan, konten yang sangat relevan dengan target.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-whale"></i>
+                        </div>
+                        <h4 class="type-title">3. Whaling (CEO Fraud)</h4>
+                        <p>Varian spear phishing yang khusus menargetkan eksekutif tingkat tinggi seperti CEO, CFO, atau direktur. Serangan ini sangat canggih dan berfokus pada penipuan bisnis seperti transfer dana tidak sah atau pengungkapan informasi sensitif perusahaan. Penyerang sering menyamar sebagai eksekutif lain atau mitra bisnis penting. Karena targetnya memiliki wewenang tinggi, kerugian dari serangan whaling bisa sangat besar.</p>
+                        <p><strong>Ciri Khas:</strong> Menyamar sebagai eksekutif, fokus pada masalah bisnis sensitif, permintaan transfer dana atau data rahasia, sering menggunakan domain email yang mirip dengan perusahaan asli.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-sms"></i>
+                        </div>
+                        <h4 class="type-title">4. Smishing (SMS Phishing)</h4>
+                        <p>Phishing melalui pesan teks SMS. Penyerang mengirim pesan yang tampak dari bank, layanan pengiriman, atau operator telekomunikasi, sering berisi tautan pendek atau permintaan untuk membalas dengan informasi pribadi. Smishing memanfaatkan kepercayaan yang lebih tinggi terhadap SMS dibanding email, serta kenyataan bahwa ponsel selalu bersama pengguna. Dengan meningkatnya penggunaan smartphone, smishing menjadi semakin umum.</p>
+                        <p><strong>Ciri Khas:</strong> Pengirim nomor tidak dikenal, tautan URL pendek, permintaan verifikasi akun melalui SMS, klaim paket yang menunggu atau hadiah yang harus diklaim.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 class="type-title">5. Vishing (Voice Phishing)</h4>
+                        <p>Phishing melalui panggilan telepon. Penyerang menelepon korban sambil menyamar sebagai perwakilan bank, dukungan teknis, atau otoritas pemerintah. Mereka menggunakan taktik sosial engineering untuk menciptakan rasa urgensi atau ketakutan, memaksa korban memberikan informasi sensitif melalui telepon. Vishing sering dikombinasikan dengan caller ID spoofing agar tampak berasal dari nomor resmi.</p>
+                        <p><strong>Ciri Khas:</strong> Panggilan tak terduga, pengklaim identitas resmi, rasa urgensi atau ancaman, permintaan informasi pribadi melalui telepon, instruksi untuk menginstal software remote access.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h4 class="type-title">6. Social Media Phishing</h4>
+                        <p>Serangan yang dilakukan melalui platform media sosial seperti Facebook, Instagram, LinkedIn, atau Twitter. Penyerang membuat profil palsu yang meniru teman, selebritas, atau merek terkenal, kemudian mengirim pesan langsung dengan tautan berbahaya atau meminta informasi. Teknik lain termasuk posting yang menjanjikan hadiah atau konten eksklusif jika pengguna mengklik tautan tertentu. Social media phishing memanfaatkan kepercayaan dalam jaringan sosial.</p>
+                        <p><strong>Ciri Khas:</strong> Pesan dari akun yang tampak dikenal, tawaran hadiah atau diskon eksklusif, permintaan verifikasi akun melalui DM, tautan ke "foto memalukan" atau "video viral".</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-clone"></i>
+                        </div>
+                        <h4 class="type-title">7. Clone Phishing</h4>
+                        <p>Teknik canggih di mana penyerang membuat salinan hampir identik dari email sah yang sebelumnya diterima korban. Penyerang mengganti tautan atau lampiran asli dengan versi berbahaya, kemudian mengirim email tiruan tersebut dari alamat yang dipalsukan agar tampak seperti tindak lanjut atau pembaruan. Karena korban sudah familiar dengan email aslinya, mereka cenderung lebih percaya dan kurang waspada terhadap versi klon.</p>
+                        <p><strong>Ciri Khas:</strong> Konten yang sangat mirip dengan email sebelumnya, klaim "pembaruan" atau "koreksi", pengirim yang tampak sama, waktu pengiriman yang masuk akal dalam konteks komunikasi sebelumnya.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4 class="type-title">8. Search Engine Phishing</h4>
+                        <p>Penyerang mengoptimalkan situs web berbahaya untuk muncul di hasil pencarian untuk kata kunci populer. Ketika pengguna mencari produk, layanan, atau informasi tertentu, mereka mungkin tanpa sengaja mengunjungi situs phishing yang tampak sah. Teknik ini sering digunakan untuk meniru situs e-commerce, layanan streaming, atau platform perangkat lunak populer. Search engine phishing memanfaatkan kepercayaan pengguna terhadap hasil pencarian teratas.</p>
+                        <p><strong>Ciri Khas:</strong> Situs muncul di hasil pencarian untuk produk atau layanan populer, tampilan profesional yang meniru merek terkenal, harga atau penawaran yang terlalu menarik, domain yang mirip dengan merek asli.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h4 class="type-title">9. Watering Hole Attack</h4>
+                        <p>Serangan canggih di mana penyerang mengidentifikasi situs web yang sering dikunjungi oleh kelompok target (seperti forum industri, situs berita khusus, atau portal komunitas), kemudian mengkompromikan situs tersebut dengan kode berbahaya. Ketika target mengunjungi situs yang sudah dikompromikan, perangkat mereka terinfeksi malware tanpa interaksi langsung dengan email atau pesan phishing. Watering hole attack sangat efektif untuk menargetkan kelompok tertentu.</p>
+                        <p><strong>Ciri Khas:</strong> Infeksi terjadi melalui kunjungan ke situs web tepercaya, target spesifik berdasarkan minat atau profesi, penggunaan exploit kit untuk mengeksploitasi kerentanan browser.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4 class="type-title">10. Business Email Compromise (BEC)</h4>
+                        <p>Serangan phishing yang sangat terfokus pada penipuan bisnis. Penyerang menyusupi atau menyamar sebagai eksekutif perusahaan (biasanya melalui email) untuk memerintahkan karyawan melakukan transfer dana ke rekening yang dikendalikan penyerang. BEC sering melibatkan penelitian mendalam tentang struktur organisasi, prosedur internal, dan pola komunikasi perusahaan target. Kerugian dari BEC mencapai miliaran dolar setiap tahun.</p>
+                        <p><strong>Ciri Khas:</strong> Email dari "eksekutif" yang meminta transfer mendesak, permintaan untuk memotong prosedur normal, fokus pada kerahasiaan ("jangan beri tahu siapa pun"), rekening bank di yurisdiksi berbeda dari biasanya.</p>
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-arrows-alt-h"></i>
+                        </div>
+                        <h4 class="type-title">11. Man-in-the-Middle (MiTM) Phishing</h4>
+                        <p>Serangan di mana penyerang secara diam-diam mencegat dan mengubah komunikasi antara dua pihak yang percaya mereka berkomunikasi langsung. Dalam konteks phishing, penyerang mungkin membuat hotspot WiFi palsu di tempat umum, lalu mencegat koneksi pengguna dan menyajikan halaman login palsu untuk layanan populer. MiTM phishing sangat berbahaya karena bahkan koneksi HTTPS dapat dikompromikan dengan teknik tertentu.</p>
+                        <strong>Ciri Khas:</strong> Terjadi di jaringan WiFi publik, sertifikat SSL yang tidak valid atau peringatan browser, pencurian sesi login yang sudah terautentikasi, redireksi tak terduga selama browsing.
+                    </div>
+                    
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 class="type-title">12. Angler Phishing</h4>
+                        <p>Teknik baru yang memanfaatkan akun media sosial resmi perusahaan. Penyerang memantau akun media sosial merek terkenal, kemudian segera merespons keluhan atau pertanyaan pelanggan dengan akun palsu yang tampak seperti dukungan resmi. Mereka menawarkan "bantuan" dan mengarahkan pengguna ke situs phishing atau meminta informasi pribadi melalui pesan langsung. Angler phishing memanfaatkan ekspektasi respons cepat di media sosial.</p>
+                        <p><strong>Ciri Khas:</strong> Respons cepat terhadap keluhan di media sosial, nama akun yang mirip dengan dukungan resmi, permintaan untuk beralih ke pesan pribadi, tautan ke "formulir klaim" atau "halaman verifikasi".</p>
+                    </div>
+                </div>
+                
+                <h3>Evolusi dan Tren Phishing Masa Depan</h3>
+                <p>Teknik phishing terus berevolusi seiring perkembangan teknologi dan perubahan perilaku pengguna. Beberapa tren yang muncul termasuk:</p>
+                <ul>
+                    <li><strong>AI-Powered Phishing:</strong> Penggunaan kecerdasan buatan untuk membuat konten phishing yang lebih personal dan meyakinkan, termasuk email yang disesuaikan secara real-time dan deepfake audio untuk vishing.</li>
+                    <li><strong>QR Code Phishing (Quishing):</strong> Menggunakan kode QR berbahaya yang mengarah ke situs phishing, memanfaatkan popularitas pembayaran dan autentikasi QR.</li>
+                    <li><strong>Multichannel Phishing:</strong> Serangan terkoordinasi melalui beberapa saluran (email, SMS, telepon) untuk meningkatkan legitimasi dan tekanan pada korban.</li>
+                    <li><strong>IoT Phishing:</strong> Eksploitasi perangkat Internet of Things yang kurang aman sebagai titik masuk ke jaringan rumah atau bisnis.</li>
+                    <li><strong>Cloud Service Phishing:</strong> Target meningkat pada kredensial layanan cloud seperti Office 365, Google Workspace, dan AWS karena nilai tinggi data yang dapat diakses.</li>
+                </ul>
+                
+                <div class="info-box">
+                    <h4>Fakta Penting tentang Evolusi Phishing</h4>
+                    <p>Menurut laporan Verizon Data Breach Investigations Report 2024, phishing terlibat dalam 36% dari semua pelanggaran data, meningkat dari 25% pada 2020. Rata-rata waktu dari klik phishing hingga kompromi data hanya 1 jam 12 menit, tetapi waktu rata-rata untuk mendeteksi pelanggaran tersebut adalah 245 hari. Ini menunjukkan betapa efektifnya phishing sebagai vektor serangan awal dan betapa sulitnya mendeteksinya setelah fakta.</p>
+                </div>
+                
+                <p>Memahami berbagai jenis phishing ini bukan hanya pengetahuan akademis, tetapi alat praktis untuk mengenali dan menghindari serangan. Setiap jenis memiliki karakteristik unik yang, jika dikenali, dapat membantu Anda mengidentifikasi penipuan sebelum menjadi korban. Prinsip dasar tetap sama: selalu verifikasi identitas pengirim, jangan terburu-buru merespons permintaan mendesak, dan gunakan saluran resmi untuk konfirmasi ketika ragu.</p>
+            </section>
+            
+            <!-- Bagian 7: Statistik Phishing -->
+            <section id="statistik" class="section animate-fade-in-up delay-3">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h2>Statistik dan Data Phishing: Memahami Skala Ancaman Digital Global</h2>
+                </div>
+                
+                <p>Untuk benar-benar memahami pentingnya perlindungan terhadap phishing, penting untuk melihat data dan statistik yang mengungkapkan skala, dampak, dan tren ancaman ini. Berikut adalah kumpulan data komprehensif dari berbagai laporan keamanan siber terkemuka dunia:</p>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">3.4 M</div>
+                        <div class="stat-text">Email phishing dikirim setiap hari secara global</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">1.2%</div>
+                        <div class="stat-text">Tingkat klik rata-rata pada email phishing</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">36%</div>
+                        <div class="stat-text">Pelanggaran data melibatkan phishing sebagai vektor awal</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">$4.35 Jt</div>
+                        <div class="stat-text">Biaya rata-rata pelanggaran data akibat phishing</div>
+                    </div>
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">300K+</div>
+                        <div class="stat-text">Situs phishing baru terdeteksi setiap bulan</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">245 Hari</div>
+                        <div class="stat-text">Waktu rata-rata untuk mendeteksi pelanggaran phishing</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">65%</div>
+                        <div class="stat-text">Organisasi mengalami serangan phishing yang berhasil (2024)</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">83%</div>
+                        <div class="stat-text">Organisasi mengalami serangan BEC dalam 12 bulan terakhir</div>
+                    </div>
+                </div>
+                
+                <h3>Distribusi Serangan Phishing Berdasarkan Sektor Industri (2024)</h3>
+                <ul>
+                    <li><strong>Layanan Keuangan:</strong> 23% dari semua serangan phishing - Target utama karena akses langsung ke aset finansial.</li>
+                    <li><strong>Teknologi:</strong> 20% - Perusahaan teknologi menjadi target untuk akses ke kredensial cloud dan hak kekayaan intelektual.</li>
+                    <li><strong>Ritel dan E-commerce:</strong> 15% - Penyerang mengejar data pelanggan dan akses ke sistem pembayaran.</li>
+                    <li><strong>Layanan Kesehatan:</strong> 12% - Data kesehatan sangat berharga di pasar gelap dan rentan terhadap ransomware.</li>
+                    <li><strong>Pendidikan:</strong> 10% - Institusi pendidikan sering memiliki keamanan yang lebih lemah dan data pribadi mahasiswa yang berharga.</li>
+                    <li><strong>Pemerintah:</strong> 8% - Target untuk akses ke informasi sensitif dan infrastruktur kritis.</li>
+                    <li><strong>Lainnya:</strong> 12% - Termasuk manufaktur, energi, transportasi, dan sektor lainnya.</li>
+                </ul>
+                
+                <h3>Metode Pengiriman Phishing yang Paling Umum</h3>
+                <ol>
+                    <li><strong>Email (Deceptive Phishing):</strong> 65% - Masih menjadi metode paling populer karena kemudahan dan skalabilitas.</li>
+                    <li><strong>Website Spoofing:</strong> 14% - Situs web palsu yang meniru merek terkenal.</li>
+                    <li><strong>Smishing (SMS):</strong> 9% - Meningkat pesat dengan adopsi mobile yang meluas.</li>
+                    <li><strong>Social Media:</strong> 7% - Memanfaatkan kepercayaan dalam jaringan sosial.</li>
+                    <li><strong>Vishing (Telepon):</strong> 3% - Meski persentasenya kecil, tingkat keberhasilannya tinggi.</li>
+                    <li><strong>Lainnya:</strong> 2% - Termasuk messaging apps, forum, dan platform lainnya.</li>
+                </ol>
+                
+                <h3>Faktor Psikologis yang Dimanfaatkan dalam Phishing</h3>
+                <p>Penelitian menunjukkan bahwa taktik psikologis tertentu sangat efektif dalam serangan phishing:</p>
+                <ul>
+                    <li><strong>Rasa Urgensi (42%):</strong> "Akun Anda akan ditutup dalam 24 jam jika tidak diverifikasi."</li>
+                    <li><strong>Otoritas (23%):</strong> "Ini dari departemen IT - kami perlu Anda menginstal pembaruan keamanan segera."</li>
+                    <li><strong>Ketakutan (18%):</strong> "Kami mendeteksi aktivitas mencurigakan di akun Anda."</li>
+                    <li><strong>Keserakahan (12%):</strong> "Klaim hadiah eksklusif Anda sekarang sebelum kehabisan!"</li>
+                    <li><strong>Rasa Ingin Membantu (5%):</strong> "Bos membutuhkan bantuan Anda untuk transfer mendesak ini."</li>
+                </ul>
+                
+                <h3>Statistik Pemulihan dan Dampak Jangka Panjang</h3>
+                <div class="danger-box">
+                    <ul>
+                        <li>Hanya <strong>33%</strong> korban pencurian identitas akibat phishing yang sepenuhnya pulih dalam 6 bulan pertama.</li>
+                        <li><strong>29%</strong> korban masih mengalami masalah terkait pencurian identitas setelah 1 tahun.</li>
+                        <li>Rata-rata korban individu menghabiskan <strong>100-200 jam</strong> untuk memulihkan identitas mereka.</li>
+                        <li>Biaya langsung rata-rata untuk pemulihan identitas adalah <strong>$1,000-$2,000</strong> per korban.</li>
+                        <li><strong>15%</strong> korban pencurian identitas mengalami penolakan kredit atau masalah finansial lainnya dalam 2 tahun setelah insiden.</li>
+                    </ul>
+                </div>
+                
+                <h3>Statistik Regional dan Global</h3>
+                <ul>
+                    <li><strong>Amerika Serikat:</strong> Menjadi target 46% dari semua serangan phishing global, kemungkinan karena nilai ekonomi digital yang besar.</li>
+                    <li><strong>Eropa:</strong> 22% serangan phishing, dengan Inggris, Jerman, dan Prancis sebagai target utama.</li>
+                    <li><strong>Asia-Pasifik:</strong> 18% serangan, dengan peningkatan cepat di negara-negara dengan adopsi digital tinggi seperti Indonesia, India, dan Vietnam.</li>
+                    <li><strong>Amerika Latin:</strong> 8% serangan, dengan Brasil dan Meksiko sebagai target utama.</li>
+                    <li><strong>Timur Tengah dan Afrika:</strong> 6% serangan, dengan Afrika Selatan dan Uni Emirat Arab sebagai target utama.</li>
+                </ul>
+                
+                <div class="info-box">
+                    <h4>Perkembangan Tren Phishing di Indonesia (2024-2025)</h4>
+                    <p>Berdasarkan data dari ID-SIRTII (Indonesia Security Incident Response Team on Internet Infrastructure), Indonesia mengalami peningkatan 47% dalam insiden phishing dari 2023 ke 2024. Sektor paling rentan adalah perbankan digital (35%), e-commerce (28%), dan media sosial (22%). Modus paling umum adalah phishing melalui WhatsApp (31%), email (29%), dan SMS (25%). Kasus FreeFire Beta Scam yang dianalisis sebelumnya merupakan bagian dari tren lebih besar dimana penipuan game menyumbang 8% dari semua insiden phishing di Indonesia pada 2024.</p>
+                </div>
+                
+                <h3>Efektivitas Langkah-Langkah Pencegahan</h3>
+                <p>Data menunjukkan bahwa kombinasi langkah-langkah tertentu sangat efektif dalam mengurangi risiko phishing:</p>
+                <ul>
+                    <li><strong>Pelatihan Kesadaran Keamanan:</strong> Mengurangi tingkat klik phishing sebesar 60% dalam organisasi yang menerapkan pelatihan rutin.</li>
+                    <li><strong>Two-Factor Authentication (2FA):</strong> Mencegah 99.9% serangan akun otomatis, bahkan jika kata sandi dicuri.</li>
+                    <li><strong>Email Filtering Canggih:</strong> Menangkap 95-99% email phishing sebelum mencapai kotak masuk pengguna.</li>
+                    <li><strong>Web Filtering dan DNS Security:</strong> Memblokir akses ke 85-90% situs phishing yang diketahui.</li>
+                    <li><strong>Password Manager:</strong> Mengurangi risiko credential stuffing sebesar 80% dengan memastikan kata sandi unik untuk setiap layanan.</li>
+                </ul>
+                
+                <p>Statistik ini mengungkapkan gambaran yang jelas: phishing adalah ancaman besar, terus berkembang, dan mempengaruhi semua sektor dan wilayah. Namun, data juga menunjukkan bahwa dengan langkah-langkah pencegahan yang tepat, risiko dapat dikurangi secara signifikan. Kunci utamanya adalah kombinasi teknologi keamanan yang kuat dengan pendidikan berkelanjutan untuk menciptakan budaya kewaspadaan siber yang tangguh.</p>
+                
+                <div class="success-box">
+                    <h4>Poin Kunci dari Data Statistik</h4>
+                    <ol>
+                        <li>Phishing bukan ancaman kecil - ini adalah vektor serangan utama yang bertanggung jawab atas lebih dari sepertiga pelanggaran data.</li>
+                        <li>Biaya phishing sangat tinggi, baik secara finansial maupun dalam hal waktu pemulihan.</li>
+                        <li>Pencegahan bekerja - organisasi dengan program kesadaran keamanan yang komprehensif mengalami jauh lebih sedikit insiden yang berhasil.</li>
+                        <li>Tren menunjukkan peningkatan dalam phishing mobile dan social media, mencerminkan perubahan pola penggunaan digital.</li>
+                        <li>Kombinasi teknologi dan pendidikan adalah pertahanan terbaik terhadap ancaman phishing yang terus berkembang.</li>
+                    </ol>
+                </div>
+                
+                <p>Dengan memahami statistik ini, individu dan organisasi dapat membuat keputusan yang lebih baik tentang di mana mengalokasikan sumber daya untuk perlindungan phishing. Data menunjukkan bahwa investasi dalam pelatihan kesadaran, autentikasi multi-faktor, dan filter email/web yang kuat memberikan pengembalian yang signifikan dalam mengurangi risiko dan dampak serangan phishing.</p>
+            </section>
+            
+            <!-- Bagian 8: Pencegahan -->
+            <section id="pencegahan" class="section animate-fade-in-up delay-4">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2>Strategi Pencegahan Komprehensif: Membangun Pertahanan Berlapis Melawan Phishing</h2>
+                </div>
+                
+                <p>Melindungi diri dari phishing memerlukan pendekatan berlapis yang menggabungkan teknologi, prosedur, dan perilaku. Tidak ada solusi tunggal yang dapat memberikan perlindungan lengkap, tetapi kombinasi strategi berikut dapat secara signifikan mengurangi risiko Anda menjadi korban. Berikut adalah panduan komprehensif untuk membangun pertahanan anti-phishing yang efektif:</p>
+                
+                <div class="prevention-grid">
+                    <div class="prevention-card">
+                        <div class="prevention-number">1</div>
+                        <h4 class="prevention-title">Verifikasi Pengirim dengan Teliti</h4>
+                        <p>Selalu periksa alamat email pengirim dengan cermat, bukan hanya nama yang ditampilkan. Email resmi dari organisasi terpercaya selalu berasal dari domain perusahaan resmi, bukan layanan email umum (gmail.com, yahoo.com, dll.). Perhatikan perbedaan kecil seperti huruf yang diganti dengan angka atau karakter Unicode yang mirip. Jika ragu, hubungi organisasi tersebut melalui saluran resmi yang Anda ketahui (bukan melalui kontak dalam email mencurigakan).</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">2</div>
+                        <h4 class="prevention-title">Analisis URL Sebelum Mengklik</h4>
+                        <p>Selalu arahkan kursor (tanpa mengklik) ke tautan untuk melihat URL tujuan di sudut browser. Periksa dengan cermat: apakah domainnya sesuai dengan organisasi yang diklaim? Waspadai karakter khusus, angka yang menggantikan huruf, dan ekstensi domain yang tidak biasa. Untuk tautan yang dipendekkan, gunakan layanan preview URL seperti CheckShortURL.com atau hindari mengklik sama sekali jika dari sumber tidak terpercaya.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">3</div>
+                        <h4 class="prevention-title">Waspadai Rasa Urgensi Buatan</h4>
+                        <p>Penyerang phishing sering menciptakan rasa urgensi palsu untuk membuat Anda bertindak tanpa berpikir. Waspadai pesan yang mengklaim "akun akan ditutup", "hadiah akan kedaluwarsa", atau "masalah keamanan mendesak". Organisasi resmi jarang meminta tindakan segera melalui email tanpa konteks sebelumnya. Jika ragu, tunggu beberapa jam atau verifikasi melalui saluran lain sebelum mengambil tindakan.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">4</div>
+                        <h4 class="prevention-title">Aktifkan Two-Factor Authentication (2FA)</h4>
+                        <p>2FA menambahkan lapisan keamanan ekstra yang membuat akun Anda jauh lebih aman bahkan jika kata sandi dicuri. Gunakan metode 2FA yang kuat seperti aplikasi authenticator (Google Authenticator, Authy) atau kunci keamanan fisik (YubiKey). Hindari 2FA melalui SMS jika memungkinkan, karena rentan terhadap SIM swapping. Aktifkan 2FA untuk semua akun penting: email, media sosial, perbankan, dan dompet digital.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">5</div>
+                        <h4 class="prevention-title">Gunakan Password Manager</h4>
+                        <p>Password manager menghasilkan dan menyimpan kata sandi unik yang kuat untuk setiap akun, menghilangkan risiko menggunakan kata sandi yang sama di beberapa situs. Ini juga mencegah serangan credential stuffing dan memudahkan Anda untuk tidak mengingat kata sandi secara manual. Pilih password manager yang terenkripsi end-to-end dan memiliki reputasi keamanan yang baik seperti Bitwarden, 1Password, atau LastPass.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">6</div>
+                        <h4 class="prevention-title">Pertahankan Perangkat Lunak Terbaru</h4>
+                        <p>Selalu instal pembaruan keamanan untuk sistem operasi, browser, aplikasi, dan antivirus. Pembaruan ini sering menambal kerentanan keamanan yang dapat dieksploitasi oleh phishing dan malware. Aktifkan pembaruan otomatis jika memungkinkan. Perhatikan bahwa beberapa serangan phishing menargetkan kerentanan lama yang belum ditambal, jadi menjaga perangkat Anda mutakhir adalah pertahanan penting.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">7</div>
+                        <h4 class="prevention-title">Waspadai Lampiran Tak Terduga</h4>
+                        <p>Jangan pernah membuka lampiran email dari pengirim yang tidak dikenal atau tak terduga, bahkan jika tampaknya dari kontak tepercaya. Format berbahaya umum termasuk .exe, .scr, .js, .vbs, dan file Office dengan makro (.docm, .xlsm). Jika ragu, verifikasi dengan pengirim melalui saluran lain sebelum membuka lampiran. Scan semua lampiran dengan antivirus sebelum membukanya, bahkan dari sumber tepercaya.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">8</div>
+                        <h4 class="prevention-title">Gunakan Email Terpisah untuk Aktivitas Berbeda</h4>
+                        <p>Buat alamat email terpisah untuk: (1) komunikasi pribadi penting, (2) pendaftaran situs web dan layanan online, (3) transaksi keuangan, dan (4) komunikasi kerja/profesional. Ini membatasi eksposur jika salah satu akun email dikompromikan. Pertimbangkan menggunakan layanan alias email seperti Apple Hide My Email atau Firefox Relay untuk pendaftaran situs yang kurang penting.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">9</div>
+                        <h4 class="prevention-title">Aktifkan Filter Spam dan Keamanan Email</h4>
+                        <p>Manfaatkan filter spam bawaan penyedia email Anda dan pertimbangkan solusi keamanan email tambahan jika tersedia. Konfigurasikan filter untuk menandai email dari domain mencurigakan atau dengan karakteristik phishing tertentu. Untuk organisasi, pertimbangkan solusi email security enterprise seperti Mimecast, Proofpoint, atau Microsoft Defender for Office 365 yang menawarkan perlindungan phishing canggih.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">10</div>
+                        <h4 class="prevention-title">Edukasi Diri dan Orang Lain Secara Berkala</h4>
+                        <p>Ikuti perkembangan teknik phishing terbaru melalui blog keamanan siber, webinar, atau kursus online. Bagikan pengetahuan Anda dengan keluarga, teman, dan kolega. Organisasi harus menyelenggarakan pelatihan kesadaran keamanan rutin dengan simulasi phishing untuk menguji dan meningkatkan kewaspadaan karyawan. Ingat: manusia adalah garis pertahanan terakhir dan terpenting melawan phishing.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">11</div>
+                        <h4 class="prevention-title">Verifikasi Situs Web dengan Sertifikat SSL</h4>
+                        <p>Selalu periksa apakah situs web menggunakan HTTPS (bukan HTTP) ketika memasukkan informasi sensitif. Klik ikon gembok di bilah alamat browser untuk melihat detail sertifikat SSL. Periksa apakah sertifikat dikeluarkan untuk domain yang benar dan oleh otoritas sertifikat yang terpercaya. Waspadai peringatan sertifikat browser - ini sering mengindikasikan masalah keamanan serius.</p>
+                    </div>
+                    
+                    <div class="prevention-card">
+                        <div class="prevention-number">12</div>
+                        <h4 class="prevention-title">Gunakan Browser dengan Fitur Keamanan Phishing</h4>
+                        <p>Browser modern seperti Chrome, Firefox, dan Edge memiliki perlindungan phishing bawaan yang memblokir akses ke situs berbahaya yang diketahui. Pastikan fitur ini diaktifkan. Pertimbangkan ekstensi keamanan tambahan seperti uBlock Origin (filter konten) atau Password Alert (peringatan jika memasukkan kata sandi Google di situs non-Google). Namun, jangan bergantung sepenuhnya pada alat ini - tetap waspada secara manual.</p>
+                    </div>
+                </div>
+                
+                <h3>Strategi Pencegahan untuk Organisasi dan Bisnis</h3>
+                <p>Organisasi memerlukan strategi pencegahan yang lebih komprehensif karena risiko dan dampaknya lebih besar:</p>
+                <ul>
+                    <li><strong>Program Kesadaran Keamanan Terstruktur:</strong> Implementasi program pelatihan berkelanjutan dengan simulasi phishing reguler, pelacakan metrik, dan pelatihan remedial untuk yang gagal dalam simulasi.</li>
+                    <li><strong>Email Gateway Security:</strong> Penyebaran solusi email security enterprise yang mencakup sandboxing lampiran, analisis URL waktu-nyata, dan deteksi BEC menggunakan AI.</li>
+                    <li><strong>Kebijakan Kata Sandi dan Akses yang Ketat:</strong> Penerapan kebijakan kata sandi yang kuat, 2FA wajib untuk semua akun, dan prinsip least privilege untuk akses sistem.</li>
+                    <li><strong>Web dan DNS Filtering:</strong> Blokir akses ke kategori situs berisiko dan domain phishing yang diketahui di tingkat jaringan.</li>
+                    <li><strong>Endpoint Detection and Response (EDR):</strong> Solusi keamanan endpoint canggih yang dapat mendeteksi dan merespons aktivitas mencurigakan yang dihasilkan dari phishing.</li>
+                    <li><strong>Prosedur Verifikasi untuk Transaksi Sensitif:</strong> Membutuhkan verifikasi ganda untuk transfer dana besar atau perubahan informasi sensitif melalui saluran terpisah.</li>
+                    <li><strong>Insiden Response Plan:</strong> Rencana tanggap insiden yang terdokumentasi untuk menangani pelanggaran data akibat phishing secara efektif.</li>
+                </ul>
+                
+                <h3>Pencegahan Phishing di Perangkat Mobile</h3>
+                <p>Dengan meningkatnya penggunaan mobile, penting untuk menerapkan strategi pencegahan khusus untuk perangkat seluler:</p>
+                <ul>
+                    <li><strong>Hanya Instal Aplikasi dari Toko Resmi:</strong> Hindari sideloading aplikasi dari sumber tidak resmi yang mungkin berisi malware phishing.</li>
+                    <li><strong>Periksa Izin Aplikasi:</strong> Tinjau izin yang diminta aplikasi dan waspadai aplikasi yang meminta akses berlebihan ke data pribadi atau fungsi perangkat.</li>
+                    <li><strong>Gunakan VPN di Jaringan Publik:</strong> Saat menggunakan WiFi publik, gunakan VPN terpercaya untuk mengenkripsi koneksi dan mencegah serangan man-in-the-middle.</li>
+                    <li><strong>Aktifkan Find My Device dan Remote Wipe:</strong> Siapkan kemampuan untuk melacak, mengunci, atau menghapus data perangkat dari jarak jauh jika hilang atau dicuri.</li>
+                    <li><strong>Waspadai Smishing (SMS Phishing):</strong> Jangan membalas SMS dari nomor tidak dikenal atau mengklik tautan dalam pesan teks yang mencurigakan.</li>
+                    <li><strong>Gunakan Mobile Security Solutions:</strong> Pertimbangkan solusi keamanan mobile enterprise jika perangkat digunakan untuk pekerjaan.</li>
+                </ul>
+                
+                <div class="success-box">
+                    <h4>Checklist Cepat: Tanda-Tanda Email Phishing</h4>
+                    <ul>
+                        <li>✅ Pengirim email tidak dikenal atau domain mencurigakan</li>
+                        <li>✅ Alamat email tidak cocok dengan organisasi yang diklaim</li>
+                        <li>✅ Salam umum seperti "Pelanggan yang terhormat" alih-alih nama Anda</li>
+                        <li>✅ Permintaan untuk informasi pribadi atau finansial</li>
+                        <li>✅ Rasa urgensi yang tidak wajar atau ancaman konsekuensi</li>
+                        <li>✅ Kesalahan tata bahasa, ejaan, atau format yang aneh</li>
+                        <li>✅ Tautan atau lampiran yang tidak diharapkan</li>
+                        <li>✅ Alamat URL tidak sesuai ketika diarahkan dengan kursor</li>
+                        <li>✅ Email tidak personal meskipun mengklaim dari organisasi tempat Anda memiliki akun</li>
+                    </ul>
+                    <p>Jika Anda menemukan satu atau lebih tanda ini, berhati-hatilah dan verifikasi melalui saluran resmi sebelum mengambil tindakan.</p>
+                </div>
+                
+                <h3>Pendekatan Berlapis: Defense-in-Depth Melawan Phishing</h3>
+                <p>Konsep defense-in-depth melibatkan penerapan beberapa lapisan pertahanan sehingga jika satu lapisan gagal, yang lain masih dapat memberikan perlindungan. Untuk phishing, ini berarti:</p>
+                <ol>
+                    <li><strong>Lapisan 1 - Pencegahan:</strong> Filter email, filter web, DNS security, dan endpoint protection untuk memblokir phishing sebelum mencapai pengguna.</li>
+                    <li><strong>Lapisan 2 - Deteksi:</strong> Monitoring jaringan, SIEM (Security Information and Event Management), dan analisis perilaku pengguna untuk mendeteksi aktivitas mencurigakan.</li>
+                    <li><strong>Lapisan 3 - Koreksi:</strong> 2FA, password management, dan least privilege access untuk membatasi dampak jika kredensial dicuri.</li>
+                    <li><strong>Lapisan 4 - Respons:</strong> Insiden response plan, backup dan recovery, serta asuransi siber untuk memulihkan dari serangan yang berhasil.</li>
+                    <li><strong>Lapisan 5 - Manusia:</strong> Pelatihan kesadaran keamanan, budaya keamanan, dan prosedur pelaporan untuk memberdayakan manusia sebagai lapisan pertahanan akhir.</li>
+                </ol>
+                
+                <p>Menerapkan strategi pencegahan komprehensif ini memerlukan usaha dan sumber daya, tetapi biayanya jauh lebih rendah dibandingkan dengan kerugian akibat serangan phishing yang berhasil. Ingatlah prinsip dasar: <span class="highlight">"Keamananmu berasal dari kewaspadaanmu"</span>. Tidak ada solusi teknologi yang dapat menggantikan kewaspadaan manusia dan skeptisisme sehat saat berinteraksi dengan komunikasi digital yang meminta informasi sensitif atau tindakan segera.</p>
+                
+                <div class="info-box">
+                    <h4>Peran Artificial Intelligence dalam Masa Depan Pencegahan Phishing</h4>
+                    <p>AI dan machine learning mulai memainkan peran penting dalam pertahanan phishing. Sistem AI dapat menganalisis pola komunikasi, mendeteksi anomali dalam email, dan mengidentifikasi situs phishing dengan akurasi tinggi. Di masa depan, kita mungkin melihat sistem yang dapat secara proaktif memperingatkan pengguna tentang potensi phishing berdasarkan analisis kontekstual real-time. Namun, bahkan dengan AI canggih, manusia tetap menjadi komponen kritis dalam pertahanan phishing - untuk mengonfigurasi sistem, menanggapi insiden, dan menerapkan penilaian kontekstual yang halus yang masih sulit bagi AI.</p>
+                </div>
+                
+                <p>Terakhir, penting untuk diingat bahwa pencegahan phishing bukanlah tujuan satu kali, tetapi proses berkelanjutan. Teknik phishing terus berkembang, dan pertahanan kita harus berkembang juga. Dengan tetap terinformasi, waspada, dan proaktif, Anda dapat secara signifikan mengurangi risiko menjadi korban penipuan digital ini dan melindungi data, privasi, dan aset digital Anda.</p>
+            </section>
+            
+            <!-- Bagian 9: Penanganan -->
+            <section id="penanganan" class="section animate-fade-in-up delay-1">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h2>Penanganan dan Pemulihan: Langkah-Langkah Mendesak Jika Anda Menjadi Korban Phishing</h2>
+                </div>
+                
+                <p>Meskipun pencegahan adalah strategi terbaik, penting untuk mengetahui apa yang harus dilakukan jika Anda atau organisasi Anda menjadi korban phishing. Respon cepat dan tepat dapat membatasi kerusakan dan memulihkan keamanan. Berikut adalah panduan langkah demi langkah untuk menangani insiden phishing:</p>
+                
+                <h3>Langkah 1: Identifikasi dan Konfirmasi Insiden (0-30 Menit Setelah Insiden)</h3>
+                <div class="danger-box">
+                    <h4>Tindakan Segera:</h4>
+                    <ol>
+                        <li><strong>Putuskan Koneksi Internet:</strong> Jika Anda mengklik tautan atau mengunduh lampiran, segera putuskan perangkat dari internet (matikan WiFi, cabut kabel Ethernet, atau aktifkan mode pesawat di ponsel) untuk mencegah pengiriman data lebih lanjut atau infeksi malware tambahan.</li>
+                        <li><strong>Identifikasi Data yang Terpapar:</strong> Tentukan informasi apa yang mungkin telah Anda berikan: email, kata sandi, data pribadi, informasi finansial, dll.</li>
+                        <li><strong>Jangan Hapus Bukti:</strong> Simpan email atau pesan phishing sebagai bukti. Jangan menghapusnya - ini penting untuk pelaporan dan investigasi.</li>
+                        <li><strong>Jangan Berinteraksi Lebih Lanjut:</strong> Jangan membalas email phishing atau berkomunikasi dengan penyerang dalam upaya untuk "memperbaiki" situasi.</li>
+                    </ol>
+                </div>
+                
+                <h3>Langkah 2: Amankan Akun dan Perangkat (30 Menit - 2 Jam)</h3>
+                <ul>
+                    <li><strong>Ubah Kata Sandi Segera:</strong> Gunakan perangkat yang aman (atau ponsel dengan data seluler, bukan WiFi yang mungkin dikompromikan) untuk mengubah kata sandi semua akun yang mungkin terpengaruh. Mulailah dengan email utama, lalu akun finansial, media sosial, dan lainnya.</li>
+                    <li><strong>Aktifkan Two-Factor Authentication (2FA):</strong> Jika belum diaktifkan, aktifkan 2FA di semua akun penting. Jika sudah diaktifkan, periksa dan pastikan metode pemulihan 2FA (nomor telepon, email cadangan) belum diubah oleh penyerang.</li>
+                    <li><strong>Periksa Aktivitas Akun:</strong> Periksa riwayat login dan aktivitas di akun email, media sosial, dan finansial untuk aktivitas tidak sah. Keluar dari semua sesi yang aktif jika memungkinkan.</li>
+                    <li><strong>Scan Perangkat dengan Antivirus:</strong> Lakukan scan malware menyeluruh pada semua perangkat yang mungkin terpengaruh menggunakan antivirus terbaru. Pertimbangkan untuk menggunakan alat khusus seperti Malwarebytes untuk deteksi tambahan.</li>
+                    <li><strong>Periksa Pengaturan Email:</strong> Periksa aturan penerusan email, tanda tangan, dan balasan otomatis yang mungkin telah ditambahkan oleh penyerang.</li>
+                </ul>
+                
+                <h3>Langkah 3: Tindakan Finansial dan Hukum (2-24 Jam)</h3>
+                <div class="info-box">
+                    <h4>Untuk Data Finansial yang Terpapar:</h4>
+                    <ol>
+                        <li><strong>Hubungi Bank dan Lembaga Keuangan:</strong> Segera hubungi bank, perusahaan kartu kredit, dan lembaga keuangan lainnya untuk melaporkan kemungkinan kompromi. Minta pembekuan atau pemblokiran kartu dan pemantauan transaksi mencurigakan.</li>
+                        <li><strong>Pantau Laporan Kredit:</strong> Mulai pantau laporan kredit Anda untuk aplikasi kredit atau pinjaman yang tidak sah. Pertimbangkan untuk membekukan kredit Anda di biro kredit utama.</li>
+                        <li><strong>Laporkan ke Otoritas:</strong> Laporkan insiden tersebut ke polisi siber atau otoritas penegak hukum yang relevan. Di Indonesia, laporkan ke BSSN (Badan Siber dan Sandi Negara) atau unit siber Polri.</li>
+                        <li><strong>Laporkan ke Lembaga Terkait:</strong> Jika informasi tertentu dicuri (seperti nomor jaminan sosial atau NPWP), laporkan ke lembaga yang mengeluarkannya.</li>
+                    </ol>
+                </div>
+                
+                <h3>Langkah 4: Pemulihan dan Penguatan (1-7 Hari)</h3>
+                <ul>
+                    <li><strong>Pulihkan Akun yang Diretas:</strong> Ikuti prosedur pemulihan akun untuk layanan di mana Anda terkunci. Siapkan dokumentasi untuk verifikasi identitas.</li>
+                    <li><strong>Pasang Pembaruan Keamanan:</strong> Pastikan semua sistem operasi, aplikasi, dan perangkat lunak keamanan diperbarui ke versi terbaru.</li>
+                    <li><strong>Evaluasi dan Perkuat Keamanan:</strong> Tinjau langkah-langkah keamanan Anda dan terapkan peningkatan seperti password manager, 2FA di lebih banyak akun, dan enkripsi data sensitif.</li>
+                    <li><strong>Backup Data:</strong> Buat backup lengkap data penting dari perangkat yang mungkin terinfeksi, kemudian lakukan instalasi ulang sistem jika diperlukan.</li>
+                    <li><strong>Pertimbangkan Layanan Pemantauan Identitas:</strong> Untuk pencurian identitas yang parah, pertimbangkan layanan pemantauan identitas berbayar yang dapat membantu mendeteksi dan merespons penyalahgunaan.</li>
+                </ul>
+                
+                <h3>Langkah 5: Pelaporan dan Pencegahan Berkelanjutan (Minggu 1 dan Seterusnya)</h3>
+                <ul>
+                    <li><strong>Laporkan ke Layanan yang Disalahgunakan:</strong> Jika penyerang menyamar sebagai layanan tertentu (misalnya, bank, PayPal, Netflix), laporkan phishing tersebut ke layanan asli sehingga mereka dapat mengambil tindakan.</li>
+                    <li><strong>Laporkan ke Otoritas Keamanan Siber:</strong> Di Indonesia, laporkan ke ID-SIRTII. Secara global, Anda dapat melaporkan ke APWG (Anti-Phishing Working Group) atau organisasi serupa.</li>
+                    <li><strong>Edukasi Diri Lebih Lanjut:</strong> Ikuti pelatihan keamanan siber tambahan untuk memahami apa yang terjadi dan bagaimana mencegahnya di masa depan.</li>
+                    <li><strong>Bagikan Pengalaman (Opsional):</strong> Pertimbangkan untuk membagikan pengalaman Anda (tanpa detail sensitif) untuk membantu orang lain belajar dan waspada terhadap teknik serupa.</li>
+                </ul>
+                
+                <h3>Penanganan Khusus untuk Organisasi dan Bisnis</h3>
+                <p>Jika insiden terjadi dalam konteks organisasi, langkah-langkah tambahan diperlukan:</p>
+                <ol>
+                    <li><strong>Aktifkan Insiden Response Plan:</strong> Segera aktifkan tim tanggap insiden dan ikuti rencana yang telah ditetapkan.</li>
+                    <li><strong>Isolasi Sistem yang Terpengaruh:</strong> Pisahkan sistem yang dikompromikan dari jaringan untuk mencegah penyebaran.</li>
+                    <li><strong>Lakukan Forensik Digital:</strong> Kumpulkan dan amankan bukti digital untuk analisis dan potensi tindakan hukum.</li>
+                    <li><strong>Beri Tahu Pihak yang Berwenang dan Pemangku Kepentingan:</strong> Patuhi persyaratan pelaporan berdasarkan peraturan yang berlaku (seperti GDPR, PDPI) dan beri tahu pihak berwenang, serta pemangku kepentingan yang relevan.</li>
+                    <li><strong>Komunikasikan secara Transparan:</strong> Berkomunikasi dengan karyawan, pelanggan, dan mitra sesuai kebutuhan dengan transparansi yang tepat sambil melindungi investigasi yang sedang berlangsung.</li>
+                    <li><strong>Lakukan Penilaian dan Perbaikan Pasca-Insiden:</strong> Setelah insiden terkendali, lakukan penilaian menyeluruh tentang apa yang terjadi, bagaimana responsnya, dan langkah-langkah perbaikan untuk mencegah terulangnya.</li>
+                </ol>
+                
+                <div class="success-box">
+                    <h4>Checklist Pemulihan Phishing</h4>
+                    <ul>
+                        <li>✅ Kata sandi diubah untuk semua akun yang mungkin terpengaruh</li>
+                        <li>✅ 2FA diaktifkan di semua akun penting</li>
+                        <li>✅ Bank dan lembaga keuangan diberitahu</li>
+                        <li>✅ Perangkat discan untuk malware dan diperbarui</li>
+                        <li>✅ Otoritas yang relevan diberitahu (polisi siber, BSSN, dll.)</li>
+                        <li>✅ Layanan yang disalahgunakan diberitahu tentang phishing</li>
+                        <li>✅ Backup data penting dibuat</li>
+                        <li>✅ Laporan kredit dipantau atau dibekukan</li>
+                        <li>✅ Pelajaran dipelajari dan keamanan ditingkatkan</li>
+                    </ul>
+                </div>
+                
+                <h3>Dukungan Psikologis dan Emosional</h3>
+                <p>Menjadi korban phishing dapat menyebabkan stres, kecemasan, rasa malu, dan ketidakberdayaan. Penting untuk:</p>
+                <ul>
+                    <li><strong>Jangan Menyalahkan Diri Sendiri:</strong> Penyerang phishing profesional dan skema mereka dirancang untuk menipu bahkan orang yang waspada.</li>
+                    <li><strong>Cari Dukungan:</strong> Bicaralah dengan teman, keluarga, atau profesional tentang pengalaman Anda jika merasa kewalahan.</li>
+                    <li><strong>Fokus pada Pemecahan Masalah:</strong> Alih-alih terpaku pada apa yang terjadi, fokuslah pada langkah-langkah yang dapat Anda ambil untuk memulihkan dan melindungi diri sendiri di masa depan.</li>
+                    <li><strong>Pertimbangkan Konseling:</strong> Untuk kasus parah dengan dampak finansial atau emosional yang signifikan, pertimbangkan konseling profesional.</li>
+                </ul>
+                
+                <h3>Pencegahan Berulang dan Pendidikan Berkelanjutan</h3>
+                <p>Setelah menangani insiden phishing, gunakan pengalaman tersebut untuk memperkuat pertahanan Anda:</p>
+                <ol>
+                    <li><strong>Analisis Bagaimana Itu Terjadi:</strong> Identifikasi apa yang membuat Anda rentan terhadap serangan ini dan bagaimana Anda dapat mengenali tanda-tanda serupa di masa depan.</li>
+                    <li><strong>Terapkan Pelajaran yang Dipetik:</strong> Implementasikan perubahan pada perilaku online Anda dan langkah-langkah keamanan berdasarkan apa yang Anda pelajari.</li>
+                    <li><strong>Edukasi Orang Lain:</strong> Bagikan pelajaran dengan keluarga, teman, atau kolega untuk membantu melindungi mereka dari nasib serupa.</li>
+                    <li><strong>Berlangganan Pembaruan Keamanan:</strong> Ikuti blog keamanan, podcast, atau buletin untuk tetap mendapatkan informasi tentang teknik phishing terbaru.</li>
+                    <li><strong>Lakukan Simulasi Secara Berkala:</strong> Jika dalam organisasi, lakukan simulasi phishing reguler untuk menguji dan meningkatkan kewaspadaan.</li>
+                </ol>
+                
+                <div class="info-box">
+                    <h4>Sumber Daya Pelaporan dan Bantuan di Indonesia</h4>
+                    <ul>
+                        <li><strong>BSSN (Badan Siber dan Sandi Negara):</strong> Laporan insiden keamanan siber melalui https://bssn.go.id/</li>
+                        <li><strong>ID-SIRTII (Indonesia Security Incident Response Team on Internet Infrastructure):</strong> https://idsirtii.or.id/</li>
+                        <li><strong>Polri - Direktorat Tindak Pidana Siber:</strong> Laporkan ke polisi setempat atau melalui portal online Polri</li>
+                        <li><strong>Bank Indonesia dan OJK:</strong> Untuk insiden yang melibatkan layanan finansial</li>
+                        <li><strong>Kominfo:</strong> Untuk konten phishing dan penipuan online</li>
+                    </ul>
+                </div>
+                
+                <p>Menangani insiden phishing secara efektif memerlukan respons terstruktur dan komprehensif. Meskipun prosesnya mungkin memakan waktu dan membuat stres, mengambil tindakan tepat dan cepat dapat membatasi kerusakan dan memulihkan keamanan. Ingatlah bahwa menjadi korban phishing bukanlah tanda kelemahan pribadi - ini adalah risiko yang dihadapi semua pengguna internet dalam lingkungan ancaman yang terus berkembang. Yang penting adalah bagaimana Anda merespons dan belajar dari pengalaman tersebut untuk membangun pertahanan yang lebih kuat di masa depan.</p>
+                
+                <p>Sebagai penutup panduan komprehensif ini, selalu ingat prinsip dasar: <span class="highlight">"Keamananmu berasal dari kewaspadaanmu"</span>. Di dunia digital yang semakin kompleks, kewaspadaan berkelanjutan, pendidikan tentang ancaman, dan kesiapan untuk merespons insiden adalah fondasi keamanan siber yang efektif. Dengan menerapkan pengetahuan dari panduan ini, Anda secara signifikan dapat mengurangi risiko menjadi korban phishing dan melindungi data, privasi, dan aset digital Anda.</p>
+            </section>
+        </div>
+        
+        <footer>
+            <div class="footer-overlay"></div>
+            <div class="footer-content">
+                <div class="footer-quote">"Keamananmu berasal dari kewaspadaanmu"</div>
+                <div class="footer-info">
+                    <p>Halaman edukasi komprehensif ini dibuat dengan tujuan meningkatkan kesadaran, pemahaman, dan kapasitas perlindungan terhadap ancaman phishing yang terus berkembang. Informasi yang disajikan didasarkan pada penelitian ekstensif, laporan keamanan siber terbaru, dan analisis praktis terhadap teknik phishing modern.</p>
+                    <p>Ingat: Keamanan digital adalah tanggung jawab bersama. Dengan berbagi pengetahuan dan mendorong praktik keamanan yang baik, kita dapat menciptakan lingkungan digital yang lebih aman untuk semua pengguna internet.</p>
+                </div>
+                <div class="footer-copyright">
+                    © 30 Desember 2025 | Panduan Edukasi Phishing Komprehensif<br>
+                    Revisi Terakhir: 30 Desember 2025 | Sumber: Laporan Keamanan Siber Global 2024-2025, APWG, Verizon DBIR, ID-SIRTII<br>
+                    <small>Disclaimer: Panduan ini untuk tujuan edukasi. Penulis tidak bertanggung jawab atas kerugian yang timbul dari penggunaan informasi ini.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Enhanced JavaScript for interactivity and animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        // Update active nav link
+                        document.querySelectorAll('.nav-link').forEach(navLink => {
+                            navLink.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                        
+                        // Scroll to section
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Highlight active section based on scroll position
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            function highlightActiveSection() {
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', highlightActiveSection);
+            
+            // Animate elements on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all sections and cards for animation
+            document.querySelectorAll('.section, .type-card, .prevention-card, .stat-card').forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Add hover effects to phishing link examples
+            const phishingLinks = document.querySelectorAll('.phishing-link-example');
+            phishingLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    if (!this.classList.contains('legitimate-link')) {
+                        this.style.transform = 'translateY(-5px)';
+                        this.style.boxShadow = '0 8px 16px rgba(220, 38, 38, 0.2)';
+                    } else {
+                        this.style.transform = 'translateY(-5px)';
+                        this.style.boxShadow = '0 8px 16px rgba(5, 150, 105, 0.2)';
+                    }
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05)';
+                });
+                
+                // Add click simulation warning
+                link.addEventListener('click', function(e) {
+                    if (!this.classList.contains('legitimate-link')) {
+                        e.preventDefault();
+                        alert('PERINGATAN: Ini adalah contoh tautan phishing. Dalam situasi nyata, mengklik tautan seperti ini dapat mengarahkan Anda ke situs berbahaya atau mencuri informasi pribadi Anda. Selalu verifikasi URL sebelum mengklik!');
+                    }
+                });
+            });
+            
+            // Add date and time of page load
+            const updateDate = document.createElement('div');
+            updateDate.style.textAlign = 'center';
+            updateDate.style.marginTop = '30px';
+            updateDate.style.fontSize = '1rem';
+            updateDate.style.color = '#64748b';
+            updateDate.style.paddingTop = '20px';
+            updateDate.style.borderTop = '1px solid #e2e8f0';
+            updateDate.innerHTML = `<i class="fas fa-clock"></i> Halaman dimuat pada: ${new Date().toLocaleString('id-ID', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            })}`;
+            document.querySelector('.content-container').appendChild(updateDate);
+            
+            // Add print functionality button
+            const printBtn = document.createElement('button');
+            printBtn.innerHTML = '<i class="fas fa-print"></i> Cetak Panduan Ini';
+            printBtn.style.position = 'fixed';
+            printBtn.style.bottom = '20px';
+            printBtn.style.right = '20px';
+            printBtn.style.backgroundColor = 'var(--primary-blue)';
+            printBtn.style.color = 'white';
+            printBtn.style.border = 'none';
+            printBtn.style.padding = '12px 24px';
+            printBtn.style.borderRadius = '30px';
+            printBtn.style.cursor = 'pointer';
+            printBtn.style.boxShadow = 'var(--shadow-medium)';
+            printBtn.style.zIndex = '1000';
+            printBtn.style.fontFamily = "'Poppins', sans-serif";
+            printBtn.style.fontWeight = '500';
+            printBtn.style.transition = 'var(--transition)';
+            
+            printBtn.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = 'var(--secondary-blue)';
+                this.style.transform = 'translateY(-3px)';
+            });
+            
+            printBtn.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'var(--primary-blue)';
+                this.style.transform = 'translateY(0)';
+            });
+            
+            printBtn.addEventListener('click', function() {
+                window.print();
+            });
+            
+            document.body.appendChild(printBtn);
+            
+            // Add "Back to Top" button
+            const backToTopBtn = document.createElement('button');
+            backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            backToTopBtn.style.position = 'fixed';
+            backToTopBtn.style.bottom = '80px';
+            backToTopBtn.style.right = '20px';
+            backToTopBtn.style.backgroundColor = 'var(--secondary-blue)';
+            backToTopBtn.style.color = 'white';
+            backToTopBtn.style.border = 'none';
+            backToTopBtn.style.width = '50px';
+            backToTopBtn.style.height = '50px';
+            backToTopBtn.style.borderRadius = '50%';
+            backToTopBtn.style.cursor = 'pointer';
+            backToTopBtn.style.boxShadow = 'var(--shadow-medium)';
+            backToTopBtn.style.zIndex = '1000';
+            backToTopBtn.style.fontSize = '1.2rem';
+            backToTopBtn.style.transition = 'var(--transition)';
+            backToTopBtn.style.opacity = '0';
+            backToTopBtn.style.visibility = 'hidden';
+            
+            backToTopBtn.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = 'var(--primary-blue)';
+                this.style.transform = 'translateY(-3px)';
+            });
+            
+            backToTopBtn.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'var(--secondary-blue)';
+                this.style.transform = 'translateY(0)';
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            document.body.appendChild(backToTopBtn);
+            
+            // Show/hide back to top button based on scroll position
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 500) {
+                    backToTopBtn.style.opacity = '1';
+                    backToTopBtn.style.visibility = 'visible';
+                } else {
+                    backToTopBtn.style.opacity = '0';
+                    backToTopBtn.style.visibility = 'hidden';
+                }
+            });
+            
+            // Add interactive quiz at the end (simplified)
+            const quizContainer = document.createElement('div');
+            quizContainer.className = 'section';
+            quizContainer.innerHTML = `
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h2>Kuis Singkat: Uji Pengetahuan Anda tentang Phishing</h2>
+                </div>
+                <div id="quiz-questions">
+                    <div class="quiz-question">
+                        <p><strong>1. Manakah dari berikut ini yang BUKAN tanda umum email phishing?</strong></p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q1" value="a"> Permintaan informasi pribadi</label><br>
+                            <label><input type="radio" name="q1" value="b"> Salam personal dengan nama lengkap Anda</label><br>
+                            <label><input type="radio" name="q1" value="c"> Rasa urgensi yang berlebihan</label><br>
+                            <label><input type="radio" name="q1" value="d"> Kesalahan tata bahasa atau ejaan</label>
+                        </div>
+                    </div>
+                    <div class="quiz-question" style="margin-top: 25px;">
+                        <p><strong>2. Apa yang harus Anda lakukan pertama kali jika mengklik tautan phishing?</strong></p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q2" value="a"> Segera ubah kata sandi di perangkat yang sama</label><br>
+                            <label><input type="radio" name="q2" value="b"> Putuskan koneksi internet perangkat</label><br>
+                            <label><input type="radio" name="q2" value="c"> Hapus email phishing tersebut</label><br>
+                            <label><input type="radio" name="q2" value="d"> Abaikan dan lanjutkan browsing</label>
+                        </div>
+                    </div>
+                    <button id="check-quiz" style="margin-top: 30px; padding: 12px 30px; background-color: var(--primary-blue); color: white; border: none; border-radius: 8px; cursor: pointer; font-family: 'Poppins', sans-serif; font-weight: 500;">Periksa Jawaban</button>
+                    <div id="quiz-results" style="margin-top: 20px; padding: 20px; border-radius: 8px; display: none;"></div>
+                </div>
+            `;
+            
+            // Add some basic styling for the quiz
+            const quizStyles = document.createElement('style');
+            quizStyles.textContent = `
+                .quiz-options label {
+                    display: block;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    padding: 10px;
+                    border-radius: 8px;
+                    transition: background-color 0.3s;
+                }
+                .quiz-options label:hover {
+                    background-color: rgba(38, 208, 206, 0.1);
+                }
+                .quiz-options input {
+                    margin-right: 10px;
+                }
+                #check-quiz:hover {
+                    background-color: var(--secondary-blue) !important;
+                    transform: translateY(-2px);
+                }
+            `;
+            document.head.appendChild(quizStyles);
+            
+            // Insert quiz before footer
+            document.querySelector('.content-container').appendChild(quizContainer);
+            
+            // Quiz functionality
+            document.getElementById('check-quiz').addEventListener('click', function() {
+                const q1Answer = document.querySelector('input[name="q1"]:checked');
+                const q2Answer = document.querySelector('input[name="q2"]:checked');
+                let score = 0;
+                let feedback = '';
+                
+                if (q1Answer && q1Answer.value === 'b') score++;
+                if (q2Answer && q2Answer.value === 'b') score++;
+                
+                const resultsDiv = document.getElementById('quiz-results');
+                
+                if (score === 2) {
+                    resultsDiv.style.backgroundColor = 'rgba(6, 214, 160, 0.1)';
+                    resultsDiv.style.borderLeft = '6px solid var(--accent-green)';
+                    feedback = '<p><strong>Luar biasa! 🎉</strong> Anda mendapatkan 2/2 jawaban benar. Pengetahuan Anda tentang phishing sangat baik. Terus pertahankan kewaspadaan dan bagikan pengetahuan ini dengan orang lain.</p>';
+                } else if (score === 1) {
+                    resultsDiv.style.backgroundColor = 'rgba(255, 215, 102, 0.1)';
+                    resultsDiv.style.borderLeft = '6px solid var(--accent-yellow)';
+                    feedback = '<p><strong>Bagus! 👍</strong> Anda mendapatkan 1/2 jawaban benar. Pengetahuan Anda tentang phishing sudah baik, tetapi ada ruang untuk peningkatan. Tinjau kembali materi di atas untuk memperdalam pemahaman Anda.</p>';
+                } else {
+                    resultsDiv.style.backgroundColor = 'rgba(255, 107, 107, 0.1)';
+                    resultsDiv.style.borderLeft = '6px solid var(--accent-red)';
+                    feedback = '<p><strong>Perlu peningkatan. 📚</strong> Anda mendapatkan 0/2 jawaban benar. Sangat disarankan untuk membaca kembali panduan ini dengan lebih teliti, terutama bagian tentang pencegahan dan penanganan phishing.</p>';
+                }
+                
+                feedback += '<p><strong>Jawaban yang benar:</strong></p>';
+                feedback += '<ol>';
+                feedback += '<li><strong>B. Salam personal dengan nama lengkap Anda</strong> - Email phishing biasanya menggunakan salam umum seperti "Pelanggan yang terhormat" bukan nama spesifik. Namun, spear phishing yang lebih canggih mungkin menggunakan nama Anda, jadi ini bukan indikator mutlak.</li>';
+                feedback += '<li><strong>B. Putuskan koneksi internet perangkat</strong> - Ini adalah langkah pertama yang penting untuk mencegah pengiriman data lebih lanjut atau infeksi malware tambahan sebelum mengamankan akun Anda.</li>';
+                feedback += '</ol>';
+                
+                resultsDiv.innerHTML = feedback;
+                resultsDiv.style.display = 'block';
+                
+                // Scroll to results
+                resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+            
+            // Initialize with first section active
+            highlightActiveSection();
+        });
+        
+        // Prevent leaving page without confirmation (for demo purposes)
+        window.addEventListener('beforeunload', function(e) {
+            // Commented out for normal use, but can be enabled for demo
+            // e.preventDefault();
+            // e.returnValue = 'Apakah Anda yakin ingin meninggakan halaman edukasi phishing ini? Pastikan Anda telah menyimpan informasi penting yang diperlukan.';
+        });
+    </script>
+</body>
+</html>h
